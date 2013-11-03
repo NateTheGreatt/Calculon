@@ -173,7 +173,10 @@ SubtractionBoop.prototype.evaluate = function()
     var dif = parseInt(this.inputs[0].getValue());
 
     console.log('value: ' + dif);
-    dif -= parseInt(this.inputs[1].getValue());
+    if(this.inputs[1])
+    {
+        dif -= parseInt(this.inputs[1].getValue());
+    }
     console.log('dif: ' + dif);
 
     return dif;
