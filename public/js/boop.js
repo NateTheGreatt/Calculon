@@ -223,12 +223,12 @@ extend(Boop, DivisionBoop);
 // @Override EVALUATE
 DivisionBoop.prototype.evaluate = function()
 {
-    var quot = this.inputs[0];
+    var quot = this.inputs[0].getValue();
 
     console.log('value: ' + quot);
     if(this.inputs[1])
     {
-        quot /= parseInt(this.inputs[1]);
+        quot /= parseInt(this.inputs[1].getValue());
     }
     console.log('quot: ' + quot);
 
