@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b7581c65-1d01-4e4a-90cd-e31fa967c98c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/boop.js" afterPath="$PROJECT_DIR$/public/js/boop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Calculon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,7 +23,7 @@
     <file path="/calculon.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383506856273" ignored="false" />
     <file path="/style.css" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383339193742" ignored="false" />
     <file path="/boop.jade" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383254655991" ignored="false" />
-    <file path="/boop.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383518880774" ignored="false" />
+    <file path="/boop.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383519070500" ignored="false" />
     <file path="/calculon-old.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383337617703" ignored="false" />
     <file path="/Dummy.txt" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383518542908" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,7 +68,7 @@
           <file leaf-file-name="boop.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/js/boop.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="175" column="22" selection-start="4594" selection-end="4594" vertical-scroll-proportion="0.68">
+                <state line="255" column="5" selection-start="6234" selection-end="6234" vertical-scroll-proportion="1.8783333">
                   <folding />
                 </state>
               </provider>
@@ -479,7 +477,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/boop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="22" selection-start="4594" selection-end="4594" vertical-scroll-proportion="0.68">
+        <state line="255" column="5" selection-start="6234" selection-end="6234" vertical-scroll-proportion="1.8783333">
           <folding />
         </state>
       </provider>

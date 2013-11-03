@@ -226,7 +226,10 @@ DivisionBoop.prototype.evaluate = function()
     var quot = this.inputs[0];
 
     console.log('value: ' + quot);
-    quot /= parseInt(this.inputs[1]);
+    if(this.inputs[1])
+    {
+        quot /= parseInt(this.inputs[1]);
+    }
     console.log('quot: ' + quot);
 
     return quot;
@@ -249,7 +252,10 @@ ExponentBoop.prototype.evaluate = function()
     var xprod = this.inputs[0].getValue();
 
     console.log('value: ' + xprod);
-    xprod = Math.pow(xprod,this.inputs[1].getValue());
+    if(this.inputs[1])
+    {
+        xprod = Math.pow(xprod,this.inputs[1].getValue());
+    }
     console.log('xprod: ' + xprod);
 
     return xprod;
