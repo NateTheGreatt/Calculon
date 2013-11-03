@@ -9,7 +9,8 @@ jsPlumb.ready(function() {
         isSource: true,
         isTarget: false,
         maxConnections: -1,
-        anchor: [1,0,1,0]
+        anchor: [1,0,1,0],
+        paintStyle: {strokeStyle:'blue', lineWidth:2}
     }
 
     var input = {
@@ -84,6 +85,12 @@ jsPlumb.ready(function() {
             case 'Division':
                 newBoop = new DivisionBoop();
                 break;
+            case 'Exponent':
+                newBoop = new ExponentBoop();
+                break;
+            case 'Square Root':
+                newBoop = new SquareRootBoop();
+                break;
         }
         boops.push(newBoop);
 
@@ -93,6 +100,7 @@ jsPlumb.ready(function() {
             addOutput = $('<div>').addClass('button addOutput').text('+'),
             del = $('<div>').addClass('button delete').text('x'),
             title = $('<div>').addClass('title').text('Boop '+i),
+            type = $('<div>').text(type),
             value = $('<input type="text">').addClass('value').val('0'),
             connect = $('<div>').addClass('connect');
 
@@ -112,6 +120,7 @@ jsPlumb.ready(function() {
 
         boop.append(title);
         boop.append(value);
+        boop.append(type);
         //boop.append(connect);
         boop.append(addInput);
         boop.append(addOutput);

@@ -53,8 +53,10 @@ a {
   border: 1px solid;
 }
 .boop .title {
-  padding: 10px;
+  padding: 0px;
+  text-align: center;
   cursor: move;
+  font-size: 9px;
 }
 .boop .value {
   padding: 0;
@@ -66,4 +68,7 @@ a {
   height: 20px;
   background-color: #fff;
   cursor: pointer;
+}
+svg path {
+  stroke: #00f;
 }

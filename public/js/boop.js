@@ -243,10 +243,10 @@ extend(Boop, ExponentBoop);
 // @Override EVALUATE
 ExponentBoop.prototype.evaluate = function()
 {
-    var xprod = this.inputs[0];
+    var xprod = this.inputs[0].getValue();
 
     console.log('value: ' + xprod);
-    xprod = Math.pow(xprod,this.inputs[1]);
+    xprod = Math.pow(xprod,this.inputs[1].getValue());
     console.log('xprod: ' + xprod);
 
     return xprod;
