@@ -84,7 +84,6 @@ Boop.prototype =
     connectTo : function(other)
     {
         other.inputs.push(this);	// add ourselves to the other boop's input array
-        other.update();				// tell them to update
 
         this.outputs.push(other);	// add the other boop to our output array
         this.update();				// update ourselves
@@ -196,13 +195,12 @@ extend(Boop, MultiplicationBoop);
 // @Override EVALUATE
 MultiplicationBoop.prototype.evaluate = function()
 {
-    Boop.update();
     var prod = 1;
 
     this.inputs.filter(function(o)
     {
-        console.log('value: ' + o.value);
-        prod *= parseInt(o.value);
+        console.log('value: ' + o.getValue());
+        prod *= parseInt(o.getValue());
         console.log('prod: ' + prod);
     });
 
@@ -282,6 +280,31 @@ SquareRootBoop.prototype.evaluate = function()
     console.log('sr: ' + sr);
 
     return sr;
+}
+//<<-------------------------- Modulo Boop ----------------------------------->>
+
+function ModuloBoop()
+{
+    Boop.call(this);	// call parent constructor
+    console.log('Modulo Boop Created');
+}
+
+//inherit from Boop
+extend(Boop, ModuloBoop);
+
+// @Override EVALUATE
+ModuloBoop.prototype.evaluate = function()
+{
+    var div = this.inputs[0].getValue();
+
+    console.log('value: ' + div);
+    if(this.inputs[1])
+    {
+        div %= this.inputs[1].getValue();
+    }
+    console.log('div: ' + div);
+
+    return div;
 }
 
 //<<-------------------------- Setup ----------------------------------->>

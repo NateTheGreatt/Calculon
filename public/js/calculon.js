@@ -2,6 +2,7 @@ var boops = [];
 
 jsPlumb.ready(function() {
 
+
     jsPlumb.draggable($('.boop'));
 
     var output = {
@@ -10,7 +11,7 @@ jsPlumb.ready(function() {
         isTarget: false,
         maxConnections: -1,
         anchor: [1,0,1,0],
-        paintStyle: {strokeStyle:'blue', lineWidth:2}
+        ConnectionsDetachable:true
     }
 
     var input = {
@@ -18,7 +19,11 @@ jsPlumb.ready(function() {
         isSource: false,
         isTarget: true,
         maxConnections: 1,
-        anchor: [0,1,-1,0]
+        anchor: [0,1,-1,0],
+        connectorStyle: {
+            lineWidth:2,
+            strokeStyle:"#000"
+        }
     }
 
     //Fixes endpoints for specified target
@@ -174,6 +179,15 @@ jsPlumb.ready(function() {
 
         boops[sourceId].connectTo(boops[targetId]);
         $('#boop-'+targetId+' .value').val(boops[targetId].getValue());
+    });
+
+    jsPlumb.bind('connectionDetached', function(info){
+        console.log(info);
+        /*var sourceId = info.sourceId.split('-')[1],
+            targetId = info.targetId.split('-')[1];
+
+        boops[sourceId].connectTo(boops[targetId]);
+        $('#boop-'+targetId+' .value').val(boops[targetId].getValue());*/
     });
 
     $('.addBoop').click(function() {
