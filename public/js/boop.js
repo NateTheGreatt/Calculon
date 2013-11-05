@@ -51,8 +51,6 @@ Boop.prototype =
     // UPDATE
     update : function()
     {
-        // redraw UI
-        $('.value').trigger('redraw');
 
         if(this.inputs.length > 0)        // if we have any inputs
         {

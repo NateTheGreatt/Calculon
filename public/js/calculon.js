@@ -90,6 +90,9 @@ jsPlumb.ready(function() {
             case 'Division':
                 newBoop = new DivisionBoop();
                 break;
+            case 'Modulo':
+                newBoop = new ModuloBoop();
+                break;
             case 'Exponent':
                 newBoop = new ExponentBoop();
                 break;
@@ -162,6 +165,8 @@ jsPlumb.ready(function() {
             var id = $(this).parent().attr('id').split('-')[1];
             boops[id].setValue($(this).val());
             boops[id].update();
+            // redraw UI
+            $('.value').trigger('redraw');
         });
 
         $('.value').on('redraw', function() {
