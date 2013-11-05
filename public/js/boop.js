@@ -108,7 +108,6 @@ Boop.prototype =
         {
             this.outputs.splice(index,1);			// remove them from it
         }
-        this.update();								// update ourselves
     }
 }
 
@@ -307,7 +306,7 @@ ModuloBoop.prototype.evaluate = function()
     return div;
 }
 
-//<<-------------------------- Setup ----------------------------------->>
+//<<-------------------------- Initial Layout ----------------------------------->>
 
 /*
 var boop1 = new VariableBoop(),
