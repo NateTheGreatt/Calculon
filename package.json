@@ -1,14 +1,13 @@
 {
-  "name": "application-name",
+  "name": "calculon",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "express": "3.4.0",
     "jade": "*",
-    "stylus": "*",
-    "nodemon": "*"
+    "stylus": "*"
   }
 }
