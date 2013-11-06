@@ -14,7 +14,7 @@
     <file path="$PROJECT_DIR$/node_modules/stylus/bm.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1381070872489" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/multipart.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1381070872489" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/examples/node_modules/event-stream/node_modules/optimist/package.json" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1381070872489" ignored="false" />
-    <file path="/package.json" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1381071092287" ignored="false" />
+    <file path="/package.json" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383762877727" ignored="false" />
     <file path="/app.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383254698322" ignored="false" />
     <file path="/index.jade" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383418051330" ignored="false" />
     <file path="/style.styl" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383507198405" ignored="false" />
@@ -61,7 +61,7 @@
           <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="17" selection-start="190" selection-end="190" vertical-scroll-proportion="0.310219">
+                <state line="9" column="16" selection-start="166" selection-end="166" vertical-scroll-proportion="0.27919707">
                   <folding />
                 </state>
               </provider>
@@ -101,7 +101,7 @@
           <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/index.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="30" selection-start="299" selection-end="299" vertical-scroll-proportion="0.32578397">
+                <state line="13" column="13" selection-start="339" selection-end="339" vertical-scroll-proportion="0.38501742">
                   <folding />
                 </state>
               </provider>
@@ -482,13 +482,6 @@
         <state line="216" column="7" selection-start="2651" selection-end="2651" vertical-scroll-proportion="3.6308873" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="299" selection-end="299" vertical-scroll-proportion="0.32578397">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="0" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
@@ -496,9 +489,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="339" selection-end="339" vertical-scroll-proportion="0.38501742">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="190" selection-end="190" vertical-scroll-proportion="0.310219">
+        <state line="9" column="16" selection-start="166" selection-end="166" vertical-scroll-proportion="0.27919707">
           <folding />
         </state>
       </provider>
