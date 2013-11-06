@@ -49,19 +49,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.52786887">
       <split-first>
         <leaf>
-          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="41" column="0" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/package.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="16" selection-start="166" selection-end="166" vertical-scroll-proportion="0.27919707">
+                <state line="41" column="0" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.82229966">
                   <folding />
                 </state>
               </provider>
@@ -482,13 +473,6 @@
         <state line="216" column="7" selection-start="2651" selection-end="2651" vertical-scroll-proportion="3.6308873" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="13" selection-start="339" selection-end="339" vertical-scroll-proportion="0.38501742">
@@ -498,7 +482,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="16" selection-start="166" selection-end="166" vertical-scroll-proportion="0.27919707">
+        <state line="16" column="1" selection-start="260" selection-end="260" vertical-scroll-proportion="0.49635038">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1052" selection-end="1052" vertical-scroll-proportion="0.82229966">
           <folding />
         </state>
       </provider>
