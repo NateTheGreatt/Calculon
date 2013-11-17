@@ -145,7 +145,7 @@ AdditionBoop.prototype.evaluate = function()
     this.inputs.filter(function(o)
     {
         console.log('value: ' + o.value);
-        sum += parseInt(o.value);
+        sum += parseFloat(o.value);
     });
     console.log('sum: ' + sum);
     this.value = sum;
@@ -166,12 +166,12 @@ extend(Boop, SubtractionBoop);
 // @Override EVALUATE
 SubtractionBoop.prototype.evaluate = function()
 {
-    var dif = parseInt(this.inputs[0].getValue());
+    var dif = parseFloat(this.inputs[0].getValue());
 
     console.log('value: ' + dif);
     if(this.inputs[1])
     {
-        dif -= parseInt(this.inputs[1].getValue());
+        dif -= parseFloat(this.inputs[1].getValue());
     }
     console.log('dif: ' + dif);
 
@@ -197,7 +197,7 @@ MultiplicationBoop.prototype.evaluate = function()
     this.inputs.filter(function(o)
     {
         console.log('value: ' + o.getValue());
-        prod *= parseInt(o.getValue());
+        prod *= parseFloat(o.getValue());
         console.log('prod: ' + prod);
     });
 
@@ -223,7 +223,7 @@ DivisionBoop.prototype.evaluate = function()
     console.log('value: ' + quot);
     if(this.inputs[1])
     {
-        quot /= parseInt(this.inputs[1].getValue());
+        quot /= parseFloat(this.inputs[1].getValue());
     }
     console.log('quot: ' + quot);
 

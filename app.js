@@ -3,11 +3,12 @@
  * Module dependencies.
  */
 
-var express = require('express');
-var routes = require('./routes');
-var user = require('./routes/user');
-var http = require('http');
-var path = require('path');
+var express = require('express'),
+    routes = require('./routes'),
+    user = require('./routes/user'),
+    http = require('http'),
+    path = require('path'),
+    mongoose = require('mongoose');
 
 var app = express();
 
@@ -33,8 +34,33 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/boop', function(req,res) {
     res.render('boop');
-})
-app.get('/users', user.list);
+});
+
+var db = mongoose.connect('mongodb://localhost/calculon');
+
+var ClosureSchema = new mongoose.Schema({
+    ancestor: Number,
+    descendant: Number,
+    tier: Number
+});
+
+ClosureModel = mongoose.model('ClosureTable', ClosureSchema);
+
+app.post('/save', function(req,res) {
+    var boop = new ClosureModel();
+    boop.ancestor = req.body.ancestor;
+    boop.descendant = req.body.descendant;
+    boop.tier = req.body.tier;
+
+    boop.save(function() {
+        ClosureModel.find({}, function(err, rows) {
+            if(err) console.log('bad');
+            else console.log(rows);
+        });
+    });
+
+    res.send(200);
+});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
