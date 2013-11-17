@@ -70,6 +70,40 @@ jsPlumb.ready(function() {
         }
     }
 
+    function saveProject() {
+        var msg = [];
+        boops.filter(function(boop) {
+            var ancestors = [],
+                descendants = [];
+            boop.inputs.filter(function(input) {
+                ancestors.push(input.getId());
+            });
+            boop.outputs.filter(function(output) {
+                descendants.push(output.getId());
+            });
+            console.log(ancestors);
+            console.log(descendants);
+            msg.push({
+                "id": boop.getId(),
+                "type": boop.getType(),
+                "value": boop.getValue(),
+                "x": boop.getPos().x,
+                "y": boop.getPos().y,
+                "ancestors": ancestors,
+                "descendant": descendants
+            });
+        });
+
+        $.ajax({
+            type: "POST",
+            url: "/save",
+            data: {"boops":msg},
+            dataType: 'json'
+        }).done(function( data ) {
+            console.log( "Data Saved: " + data );
+        });
+    }
+
     function addBoop(type) {
 
         // instantiate the back-end boop
@@ -100,7 +134,6 @@ jsPlumb.ready(function() {
                 newBoop = new SquareRootBoop();
                 break;
         }
-        boops.push(newBoop);
 
         // create the front-end display
         var boop = $('<div>').attr('id', 'boop-'+i).addClass('boop'),
@@ -112,10 +145,16 @@ jsPlumb.ready(function() {
             value = $('<input type="text">').addClass('value').val('0'),
             connect = $('<div>').addClass('connect');
 
+        var x = 100,
+            y = 100;
+
         boop.css({
-            'top': 100,
-            'left': 100
+            'top': x,
+            'left': y
         });
+
+        newBoop.setPos(x,y);
+        boops.push(newBoop);
 
         jsPlumb.makeTarget(boop, {
             anchor: 'Continuous'
@@ -167,13 +206,23 @@ jsPlumb.ready(function() {
             boops[id].update();
             // redraw UI
             $('.value').trigger('redraw');
+            saveProject();
         });
 
         $('.value').on('redraw', function() {
             var id = $(this).parent().attr('id').split('-')[1];
             $(this).val(boops[id].getValue());
             console.log('redrawing');
+            saveProject();
         });
+
+        $('.boop').mouseup(function(e) {
+            var id = $(this).attr('id').split('-')[1];
+            boops[id].setPos($(this).position().left, $(this).position().top);
+            saveProject();
+        });
+
+        saveProject();
     }
 
     var i = 0;
@@ -197,6 +246,7 @@ jsPlumb.ready(function() {
 
     $('.addBoop').click(function() {
         addBoop($(this).html());
-    })
+    });
+
 });
 

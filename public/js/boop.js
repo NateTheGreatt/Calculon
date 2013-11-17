@@ -29,6 +29,11 @@ var $boop = $(document.createElement('div'))
 
 //<<-------------------------- Abastract Base Boop ----------------------------------->>
 
+function Point(x,y) {
+    this.x = x;
+    this.y = y;
+}
+
 function Boop()
 {
     // Back-end ----------------------------->>
@@ -36,6 +41,8 @@ function Boop()
     this.outputs = [];
     this.value = 0;
     this.id = ++id;
+    this.type = 'boop';
+    this.position = new Point(0,0);
 
     // Front-end ---------------------------->>
     /*this.display = document.createElement('div');
@@ -74,8 +81,24 @@ Boop.prototype =
         console.log('Boop #'+this.id+' value has been set to '+x);
         this.value = x;
     },
+    getType : function() {
+        return this.type;
+    },
+    setType : function(type) {
+        this.type = type;
+    },
     getId : function() {
         return this.id;
+    },
+
+    setPos : function(x,y) {
+        this.x = x;
+        this.y = y;
+        console.log('Position set: ('+x+','+y+')')
+    },
+
+    getPos : function() {
+        return {"x": this.x, "y": this.y};
     },
 
     // CONNECT TO
@@ -85,8 +108,6 @@ Boop.prototype =
 
         this.outputs.push(other);	// add the other boop to our output array
         this.update();				// update ourselves
-
-
 
         console.log('Boop' + this.id + ' connected to Boop' + other.id);  // log the connection
     },
@@ -131,6 +152,7 @@ extend(Boop, VariableBoop);
 function AdditionBoop()
 {
     Boop.call(this);	// call parent constructor
+    this.setType('addition');
     console.log('Addition Boop Created');
 }
 
@@ -157,6 +179,7 @@ AdditionBoop.prototype.evaluate = function()
 function SubtractionBoop()
 {
     Boop.call(this);	// call parent constructor
+    this.setType('subtraction');
     console.log('Subtraction Boop Created');
 }
 
@@ -183,6 +206,7 @@ SubtractionBoop.prototype.evaluate = function()
 function MultiplicationBoop()
 {
     Boop.call(this);	// call parent constructor
+    this.setType('multiplication');
     console.log('Multiplication Boop Created');
 }
 
@@ -209,6 +233,7 @@ MultiplicationBoop.prototype.evaluate = function()
 function DivisionBoop()
 {
     Boop.call(this);	// call parent constructor
+    this.setType('division');
     console.log('Division Boop Created');
 }
 
@@ -235,6 +260,7 @@ DivisionBoop.prototype.evaluate = function()
 function ExponentBoop()
 {
     Boop.call(this);	// call parent constructor
+    this.setType('exponent');
     console.log('Exponent Boop Created');
 }
 
@@ -261,6 +287,7 @@ ExponentBoop.prototype.evaluate = function()
 function SquareRootBoop()
 {
     Boop.call(this);	// call parent constructor
+    this.setType('squareroot');
     console.log('Square Root Boop Created');
 }
 
@@ -283,6 +310,7 @@ SquareRootBoop.prototype.evaluate = function()
 function ModuloBoop()
 {
     Boop.call(this);	// call parent constructor
+    this.setType('modulo');
     console.log('Modulo Boop Created');
 }
 

@@ -38,28 +38,55 @@ app.get('/boop', function(req,res) {
 
 var db = mongoose.connect('mongodb://localhost/calculon');
 
+var BoopSchema = new mongoose.Schema({
+    id: Number,
+    type: String,
+    value: Number,
+    x: Number,
+    y: Number
+});
+
+var BoopModel = mongoose.model('boop', BoopSchema);
+
 var ClosureSchema = new mongoose.Schema({
+    boopId: Number,
     ancestor: Number,
     descendant: Number,
     tier: Number
 });
 
-ClosureModel = mongoose.model('ClosureTable', ClosureSchema);
+var ClosureModel = mongoose.model('closure', ClosureSchema);
 
 app.post('/save', function(req,res) {
-    var boop = new ClosureModel();
-    boop.ancestor = req.body.ancestor;
-    boop.descendant = req.body.descendant;
-    boop.tier = req.body.tier;
 
-    boop.save(function() {
+    var boops = req.body.boops;
+
+    console.log(boops);
+
+    /*boops.filter(function(_boop) {
+        var boop = new BoopModel();
+        boop.id = _boop.id;
+        boop.type = _boop.type;
+        boop.value = _boop.value;
+        boop.x = _boop.x;
+        boop.y = _boop.y;
+        boop.save();
+    });*/
+
+    /*var closure = new ClosureModel();
+    closure.boopId = req.body.boopId;
+    closure.ancestor = req.body.ancestor;
+    closure.descendant = req.body.descendant;
+    closure.tier = req.body.tier;
+
+    closure.save(function() {
         ClosureModel.find({}, function(err, rows) {
             if(err) console.log('bad');
-            else console.log(rows);
+            else console.log('Closure added: '+rows);
         });
-    });
+    });*/
 
-    res.send(200);
+    res.send(201,boops);
 });
 
 http.createServer(app).listen(app.get('port'), function(){

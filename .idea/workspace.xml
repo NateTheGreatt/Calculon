@@ -2,478 +2,190 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7581c65-1d01-4e4a-90cd-e31fa967c98c" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\.bin\nodemon" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\.bin\nodemon.cmd" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\faq.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\nodemon.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\nodemonignore.example" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\cache.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\connect.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\basicAuth.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\bodyParser.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\compress.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\cookieParser.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\cookieSession.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\csrf.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\directory.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\errorHandler.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\favicon.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\json.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\limit.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\logger.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\methodOverride.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\multipart.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\query.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\responseTime.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\session.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\session\cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\session\memory.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\session\session.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\session\store.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\static.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\staticCache.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\timeout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\urlencoded.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\middleware\vhost.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\patch.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\proto.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\directory.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\error.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_add.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_attach.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_code.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_copy.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_delete.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_edit.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_error.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_excel.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_find.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_gear.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_go.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_green.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_key.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_lightning.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_link.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_paintbrush.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_paste.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_red.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_refresh.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_save.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_acrobat.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_actionscript.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_add.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_c.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_camera.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_cd.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_code.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_code_red.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_coldfusion.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_compressed.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_copy.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_cplusplus.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_csharp.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_cup.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_database.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_delete.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_dvd.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_edit.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_error.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_excel.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_find.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_flash.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_freehand.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_gear.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_get.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_go.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_h.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_key.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_lightning.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_link.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_magnify.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_medal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_office.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_paint.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_paintbrush.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_paste.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_php.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_picture.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_powerpoint.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_put.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_ruby.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_stack.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_star.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_swoosh.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_text.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_text_width.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_tux.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_vector.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_visualstudio.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_width.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_word.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_world.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_wrench.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_white_zip.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_word.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\icons\page_world.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\public\style.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib-cov\utils.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\cache.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\connect.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\basicAuth.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\bodyParser.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\compress.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\cookieParser.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\cookieSession.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\csrf.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\directory.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\errorHandler.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\favicon.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\json.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\limit.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\logger.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\methodOverride.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\multipart.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\query.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\responseTime.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\session.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\session\cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\session\memory.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\session\session.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\session\store.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\static.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\staticCache.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\timeout.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\urlencoded.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\middleware\vhost.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\patch.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\proto.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\directory.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\error.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_add.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_attach.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_code.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_copy.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_delete.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_edit.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_error.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_excel.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_find.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_gear.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_go.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_green.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_key.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_lightning.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_link.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_paintbrush.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_paste.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_red.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_refresh.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_save.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_acrobat.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_actionscript.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_add.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_c.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_camera.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_cd.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_code.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_code_red.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_coldfusion.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_compressed.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_copy.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_cplusplus.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_csharp.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_cup.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_database.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_delete.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_dvd.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_edit.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_error.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_excel.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_find.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_flash.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_freehand.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_gear.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_get.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_go.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_h.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_key.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_lightning.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_link.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_magnify.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_medal.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_office.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_paint.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_paintbrush.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_paste.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_php.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_picture.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_powerpoint.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_put.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_ruby.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_stack.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_star.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_swoosh.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_text.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_text_width.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_tux.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_vector.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_visualstudio.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_width.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_word.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_world.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_wrench.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_white_zip.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_word.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\icons\page_world.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\public\style.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\lib\utils.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\buffer-crc32\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\buffer-crc32\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\buffer-crc32\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\buffer-crc32\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\buffer-crc32\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\buffer-crc32\tests\crc.test.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\bytes\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\bytes\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\bytes\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\bytes\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\bytes\component.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\bytes\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\bytes\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\cookie-signature\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\cookie-signature\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\cookie-signature\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\cookie-signature\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\cookie-signature\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\cookie-signature\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\cookie\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\cookie\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\cookie\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\cookie\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\cookie\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\cookie\test\mocha.opts" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\cookie\test\parse.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\cookie\test\serialize.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\TODO" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\benchmark\bench-multipart-parser.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\example\post.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\example\upload.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\lib\file.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\lib\incoming_form.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\lib\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\lib\multipart_parser.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\lib\querystring_parser.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\lib\util.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\node-gently\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\node-gently\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\node-gently\example\dog.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\node-gently\example\event_emitter.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\node-gently\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\node-gently\lib\gently\gently.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\node-gently\lib\gently\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\node-gently\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\node-gently\test\common.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\node-gently\test\simple\test-gently.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\common.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\fixture\file\funkyfilename.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\fixture\file\plain.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\fixture\http\special-chars-in-filename\info.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\fixture\js\no-filename.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\fixture\js\special-chars-in-filename.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\fixture\multipart.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\integration\test-fixtures.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\legacy\common.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\legacy\integration\test-multipart-parser.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\legacy\simple\test-file.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\legacy\simple\test-incoming-form.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\legacy\simple\test-multipart-parser.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\legacy\simple\test-querystring-parser.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\legacy\system\test-multi-video-upload.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\run.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\test\unit\test-incoming-form.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\formidable\tool\record.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\fresh\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\fresh\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\fresh\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\fresh\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\fresh\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\pause\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\pause\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\pause\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\pause\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\pause\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\pause\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\.gitmodules" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\benchmark.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\component.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\examples.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\lib\head.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\lib\querystring.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\lib\tail.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\querystring.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\test\browser\expect.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\test\browser\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\test\browser\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\test\browser\mocha.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\test\browser\mocha.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\test\browser\qs.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\test\browser\qs.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\test\parse.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\qs\test\stringify.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\lib\send.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\lib\utils.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\node_modules\mime\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\node_modules\mime\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\node_modules\mime\mime.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\node_modules\mime\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\node_modules\mime\test.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\node_modules\mime\types\mime.types" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\node_modules\mime\types\node.types" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\node_modules\range-parser\.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\node_modules\range-parser\History.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\node_modules\range-parser\Makefile" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\node_modules\range-parser\Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\node_modules\range-parser\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\node_modules\range-parser\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\node_modules\send\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\oldtests\server\node_modules\connect\test.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nate\WebstormProjects\Calculon\node_modules\nodemon\package.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/README.md" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/README.md" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/README.md" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/README.md" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/amdefine.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/amdefine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/amdefine.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/amdefine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/amdefine.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/amdefine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/.gitmodules" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/.gitmodules" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/.npmignore" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/.npmignore" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/AUTHORS" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/AUTHORS" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSFontFaceRule.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSFontFaceRule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSImportRule.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSImportRule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSKeyframeRule.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSKeyframeRule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSKeyframesRule.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSKeyframesRule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSMediaRule.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSMediaRule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSRule.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSRule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSStyleDeclaration.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSStyleDeclaration.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSStyleRule.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSStyleRule.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSStyleSheet.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/CSSStyleSheet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/LICENSE-W3C.html" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/LICENSE-W3C.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/LICENSE" afterPath="$PROJECT_DIR$/node_modules/stylus/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/LICENSE" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/LICENSE" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/MediaList.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/MediaList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/README.md" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/README.mdown" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/README.mdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/Readme.md" afterPath="$PROJECT_DIR$/node_modules/stylus/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/StyleSheet.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/StyleSheet.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/test/compress/arrays.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/test/compress/arrays.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/lib/ast.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/lib/ast.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/arguments.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/arguments.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/attribute-name.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/attribute-name.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/big-not-pretty.xml" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/big-not-pretty.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/binop.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/binop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/block.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/block.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/bm.js" afterPath="$PROJECT_DIR$/node_modules/stylus/bm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/boolean.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/boolean.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/boop.js" afterPath="$PROJECT_DIR$/public/js/boop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/browserify.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/browserify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/buffer-overrun.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/buffer-overrun.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/calculon.js" afterPath="$PROJECT_DIR$/public/js/calculon.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/call.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/call.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/case.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/case.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/cdata-chunked.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/cdata-chunked.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/cdata-end-split.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/cdata-end-split.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/cdata-fake-end.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/cdata-fake-end.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/cdata-multiple.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/cdata-multiple.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/cdata.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/cdata.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/charset.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/charset.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/chmod.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/chmod.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/clobber.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/clobber.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/clone.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/clone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/colors.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/colors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/comment.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/comment.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/visitor/compiler.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/visitor/compiler.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/lib/compress.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/lib/compress.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/component.json" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/convert/css.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/convert/css.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/cyrillic.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/cyrillic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/duplicate-attribute.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/duplicate-attribute.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/each.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/each.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/entities.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/entities.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/entity-mega.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/entity-mega.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/errors.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/errors.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/visitor/evaluator.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/visitor/evaluator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/example.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/example.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/expression.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/expression.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/extend.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/extend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/fontface.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/fontface.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/stack/frame.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/stack/frame.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/function.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/function.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/get-products.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/get-products.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/group.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/group.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/hello-world.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/hello-world.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/hsla.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/hsla.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/ident.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/ident.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/if.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/if.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/functions/image.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/functions/image.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/import.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/import.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/index.js" afterPath="$PROJECT_DIR$/node_modules/stylus/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/functions/index.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/functions/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/index.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/stack/index.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/stack/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/visitor/index.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/visitor/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/index.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/index.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/index.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/functions/index.styl" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/functions/index.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/issue-23.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/issue-23.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/issue-30.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/issue-30.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/issue-35.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/issue-35.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/issue-47.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/issue-47.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/issue-49.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/issue-49.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/issue-84.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/issue-84.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/jsliteral.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/jsliteral.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/keyframes.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/keyframes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/lexer.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/lexer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/literal.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/literal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/media.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/media.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/middleware.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/middleware.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/mkdirp.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/mkdirp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/mozdocument.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/mozdocument.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/node.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/lib/output.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/lib/output.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/character-parser/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/character-parser/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/commander/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/commander/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/async/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/async/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/optimist/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/optimist/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/uglify-to-browserify/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/uglify-to-browserify/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/examples/node_modules/event-stream/node_modules/optimist/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/examples/node_modules/event-stream/node_modules/optimist/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/node_modules/minimatch/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/node_modules/minimatch/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/node_modules/minimatch/node_modules/lru-cache/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/node_modules/minimatch/node_modules/lru-cache/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/node_modules/minimatch/node_modules/sigmund/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/monocle/node_modules/readdirp/node_modules/minimatch/node_modules/sigmund/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/css/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/css/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/css/node_modules/css-parse/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/css/node_modules/css-parse/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/css/node_modules/css-stringify/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/css/node_modules/css-stringify/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/promise/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/promise/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/promise/node_modules/is-promise/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/promise/node_modules/is-promise/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/optimist/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/optimist/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/async/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/async/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/optimist/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/optimist/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/optimist/node_modules/wordwrap/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/node_modules/amdefine/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/package.json" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/uglify-to-browserify/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/visitor/normalizer.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/visitor/normalizer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/not-pretty.xml" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/not-pretty.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/null.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/null.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/package.json" afterPath="$PROJECT_DIR$/node_modules/stylus/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/package.json" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/package.json" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/package.json" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/lib/parse.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/lib/parse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/page.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/page.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/params.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/params.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/parse.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/cssom/lib/parse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/parser-position.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/parser-position.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/parser.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/perm.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/perm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/perm_sync.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/perm_sync.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/examples/pow.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/examples/pow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/pretty-print.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/pretty-print.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/property.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/property.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/race.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/race.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/readme.markdown" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/readme.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/rel.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/rel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/renderer.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/renderer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/functions/resolver.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/functions/resolver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/test/run-tests.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/test/run-tests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/lib/scope.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/lib/scope.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/test/compress/sequences.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/test/compress/sequences.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-map-consumer.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-map-consumer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-map-consumer.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/transformers/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-map-consumer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-map-consumer.js" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/with/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-map-consumer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/return.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/return.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/return.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/return.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/return_sync.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/return_sync.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/rgba.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/rgba.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/root.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/root.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/root.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/root.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/lib/sax.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/lib/sax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/stack/scope.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/stack/scope.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/script-close-better.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/script-close-better.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/script.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/selector.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/selector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/self-closing-child-strict.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/self-closing-child-strict.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/self-closing-child.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/self-closing-child.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/self-closing-tag.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/self-closing-tag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/shopping.xml" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/shopping.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/stray-ending.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/stray-ending.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/strict.dtd" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/strict.dtd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/string.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/stylus.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/stylus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/.bin/stylus" afterPath="$PROJECT_DIR$/node_modules/.bin/stylus" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/bin/stylus" afterPath="$PROJECT_DIR$/node_modules/stylus/bin/stylus" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/bin/uglifyjs" afterPath="$PROJECT_DIR$/node_modules/jade/node_modules/constantinople/node_modules/uglify-js/bin/uglifyjs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/sync.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/sync.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/ternary.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/ternary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/test.html" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/test.xml" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/examples/test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/token.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/token.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/trailing-attribute-no-value.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/trailing-attribute-no-value.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/trailing-non-whitespace.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/trailing-non-whitespace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/umask.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/umask.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/umask_sync.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/mkdirp/test/umask_sync.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/unaryop.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/unaryop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/unclosed-root.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/unclosed-root.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/unit.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/nodes/unit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/units.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/units.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/unquoted.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/unquoted.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/functions/url.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/functions/url.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/utf8-split.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/utf8-split.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/stylus/lib/utils.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-issue-41.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-issue-41.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-rebinding.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-rebinding.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-strict.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-strict.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-unbound-element.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-unbound-element.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-unbound.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-unbound.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-xml-default-ns.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-xml-default-ns.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-xml-default-prefix-attribute.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-xml-default-prefix-attribute.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-xml-default-prefix.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-xml-default-prefix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-xml-default-redefine.js" afterPath="$PROJECT_DIR$/node_modules/stylus/node_modules/sax/test/xmlns-xml-default-redefine.js" />
     </list>
     <ignored path="Calculon.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/layout.jade" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1381075090101" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/express/node_modules/connect/lib/middleware/multipart.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1381070872489" ignored="false" />
     <file path="/package.json" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384648381503" ignored="false" />
-    <file path="/app.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384649847802" ignored="false" />
+    <file path="/app.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384661180036" ignored="false" />
     <file path="/index.jade" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383418051330" ignored="false" />
     <file path="/style.styl" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383507198405" ignored="false" />
     <file path="/draggable.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1381072989585" ignored="false" />
     <file path="/plumb.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1381083133504" ignored="false" />
-    <file path="/calculon.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383506856273" ignored="false" />
+    <file path="/calculon.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384662044762" ignored="false" />
     <file path="/style.css" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383339193742" ignored="false" />
     <file path="/boop.jade" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383254655991" ignored="false" />
-    <file path="/boop.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383616338081" ignored="false" />
+    <file path="/boop.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384660713127" ignored="false" />
     <file path="/calculon-old.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383337617703" ignored="false" />
-    <file path="/Dummy.txt" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384651074486" ignored="false" />
+    <file path="/Dummy.txt" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384654043608" ignored="false" />
     <file path="$USER_HOME$/Art/Web Design/is421/bootstrap-node-project/package.json" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383609920319" ignored="false" />
     <file path="/.gitignore" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383638284572" ignored="false" />
     <file path="/a.dummy" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383765877472" ignored="false" />
@@ -498,28 +210,19 @@
     <splitter split-orientation="horizontal" split-proportion="0.52786887">
       <split-first>
         <leaf>
-          <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="58" column="11" selection-start="1512" selection-end="1512" vertical-scroll-proportion="1.0769231">
+                <state line="73" column="9" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/package.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="19" selection-start="275" selection-end="275" vertical-scroll-proportion="-9.807693">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="calculon.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="calculon.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/js/calculon.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="169" column="11" selection-start="4775" selection-end="4775" vertical-scroll-proportion="0.0">
+                <state line="84" column="37" selection-start="2238" selection-end="2238" vertical-scroll-proportion="0.3834197">
                   <folding />
                 </state>
               </provider>
@@ -528,7 +231,7 @@
           <file leaf-file-name="boop.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/js/boop.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="0" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0">
+                <state line="39" column="15" selection-start="1139" selection-end="1145" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -538,19 +241,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="layout.jade" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="layout.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/layout.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="17" selection-start="405" selection-end="405" vertical-scroll-proportion="0.34871796">
+                <state line="12" column="17" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/index.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="13" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
+                <state line="13" column="13" selection-start="339" selection-end="339" vertical-scroll-proportion="0.38169256">
                   <folding />
                 </state>
               </provider>
@@ -583,23 +286,23 @@
         <option value="$PROJECT_DIR$/public/js/calculon-old.js" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/views/index.jade" />
-        <option value="$PROJECT_DIR$/public/js/calculon.js" />
         <option value="$PROJECT_DIR$/public/css/style.styl" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/public/js/boop.js" />
         <option value="$PROJECT_DIR$/public/js/jquery-ui-1.10.3.custom.js" />
         <option value="$PROJECT_DIR$/public/js/jquery-1.9.1.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
+        <option value="$PROJECT_DIR$/public/js/boop.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/js/calculon.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="66" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="width" value="1862" />
+    <option name="height" value="1073" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -627,7 +330,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -698,16 +400,17 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -795,23 +498,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <frame x="66" y="-8" width="1862" height="1073" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32930845" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10542963" sideWeight="0.67069155" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1053209" sideWeight="0.6590414" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3413831" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3409586" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -879,11 +582,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/draggable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="3" selection-start="0" selection-end="354" vertical-scroll-proportion="0.31664726" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/jquery.jsPlumb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2476" column="24" selection-start="106333" selection-end="106344" vertical-scroll-proportion="0.33252132" />
@@ -902,11 +600,6 @@
     <entry file="file://$PROJECT_DIR$/views/boop.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="13" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -937,44 +630,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/boop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/calculon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="11" selection-start="4775" selection-end="4775" vertical-scroll-proportion="0.0">
+        <state line="12" column="17" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="275" selection-end="275" vertical-scroll-proportion="-9.807693">
+        <state line="13" column="16" selection-start="236" selection-end="255" vertical-scroll-proportion="-8.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+    <entry file="file://$PROJECT_DIR$/public/css/style.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="405" selection-end="405" vertical-scroll-proportion="0.34871796">
+        <state line="60" column="11" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="339" selection-end="339" vertical-scroll-proportion="0.38169256">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/boop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="15" selection-start="1139" selection-end="1145" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="11" selection-start="1512" selection-end="1512" vertical-scroll-proportion="1.0769231">
+        <state line="73" column="9" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/calculon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="37" selection-start="2238" selection-end="2238" vertical-scroll-proportion="0.3834197">
           <folding />
         </state>
       </provider>
