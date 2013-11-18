@@ -1,4 +1,5 @@
 var boops = [];
+var toSave = [];
 
 jsPlumb.ready(function() {
 
@@ -101,6 +102,20 @@ jsPlumb.ready(function() {
             dataType: 'json'
         }).done(function( data ) {
             console.log( "Data Saved: " + data );
+        });
+    }
+
+    function saveBoop(id) {
+        var x = boops[id].getPos().x,
+            y = boops[id].getPos().y;
+
+        $.ajax({
+            type: "POST",
+            url: "/saveBoop",
+            data: {"id":id, "x":x, "y":y},
+            dataType: 'json'
+        }).done(function( data ) {
+                console.log( "Data Saved: " + data );
         });
     }
 
@@ -219,10 +234,10 @@ jsPlumb.ready(function() {
         $('.boop').mouseup(function(e) {
             var id = $(this).attr('id').split('-')[1];
             boops[id].setPos($(this).position().left, $(this).position().top);
-            saveProject();
+            saveBoop(id);
         });
 
-        saveProject();
+        saveBoop(i);
     }
 
     var i = 0;

@@ -38,8 +38,15 @@ app.get('/boop', function(req,res) {
 
 var db = mongoose.connect('mongodb://localhost/calculon');
 
+var ProjectSchema = new mongoose.Schema({
+    id: Number,
+    name: String,
+    user: String
+});
+
 var BoopSchema = new mongoose.Schema({
     id: Number,
+    projectId: Number,
     type: String,
     value: Number,
     x: Number,
@@ -49,10 +56,12 @@ var BoopSchema = new mongoose.Schema({
 var BoopModel = mongoose.model('boop', BoopSchema);
 
 var ClosureSchema = new mongoose.Schema({
+    projectId: Number,
     boopId: Number,
     ancestor: Number,
     descendant: Number,
-    tier: Number
+    tier: Number,
+    layer: Number
 });
 
 var ClosureModel = mongoose.model('closure', ClosureSchema);
@@ -63,7 +72,7 @@ app.post('/save', function(req,res) {
 
     console.log(boops);
 
-    /*boops.filter(function(_boop) {
+    boops.filter(function(_boop) {
         var boop = new BoopModel();
         boop.id = _boop.id;
         boop.type = _boop.type;
@@ -71,7 +80,7 @@ app.post('/save', function(req,res) {
         boop.x = _boop.x;
         boop.y = _boop.y;
         boop.save();
-    });*/
+    });
 
     /*var closure = new ClosureModel();
     closure.boopId = req.body.boopId;
@@ -88,6 +97,31 @@ app.post('/save', function(req,res) {
 
     res.send(201,boops);
 });
+
+app.post('/saveBoop', function(req,res) {
+    console.log('hey');
+    BoopModel.findOne({id: req.body.id}, function(err,boop) {
+        if(err) console.log('bad');
+        else {
+            if(boop) {
+                boop.x = req.body.x;
+                boop.y = req.body.y;
+                boop.save(function() {
+                    console.log('ok boop saved');
+                });
+            } else {
+
+            }
+
+        }
+    })
+})
+
+app.get('/load', function(req,res) {
+    BoopModel.find({}, function(err, boops) {
+        console.log(boops);
+    })
+})
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

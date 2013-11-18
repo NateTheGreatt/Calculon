@@ -135,6 +135,7 @@ Boop.prototype =
 function VariableBoop()
 {
     Boop.call(this);	// call parent constructor
+    this.setType('variable');
     console.log('Variable Boop Created');
 };
 
