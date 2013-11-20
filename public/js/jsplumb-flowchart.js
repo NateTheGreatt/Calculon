@@ -61,7 +61,7 @@ jsPlumb.ready(function() {
     // the definition of target endpoints (will appear when the user drags a connection)
         targetEndpoint = {
             endpoint:"Dot",
-            paintStyle:{ fillStyle:"#7AB02C",radius:11 },
+            paintStyle:{ fillStyle:"#7AB02C",radius:8 },
             hoverPaintStyle:endpointHoverStyle,
             maxConnections:-1,
             dropOptions:{ hoverClass:"hover", activeClass:"active" },
@@ -89,13 +89,31 @@ jsPlumb.ready(function() {
         }
     };
 
+
+    var id = 0;
+    var addBoop = function() {
+        $('.flowchart-demo').append("<div class='window' id='boop"+id+"'></div>");
+        instance.addEndpoint("boop"+id, sourceEndpoint);
+        instance.addEndpoint("boop"+id, targetEndpoint);
+        instance.addEndpoint("boop"+id, targetEndpoint);
+        var endpoints = instance.getEndpoints("boop"+id);
+        endpoints[0].anchor.x = 0.8;
+        endpoints[1].anchor.x = 0.2;
+        endpoints[1].anchor.y = 0;
+        endpoints[2].anchor.x = 0.4;
+        endpoints[2].anchor.y = 0;
+        instance.draggable(jsPlumb.getSelector(".flowchart-demo .window"), { grid: [20, 20] });
+
+        id++;
+    }
+
     // suspend drawing and initialise.
     instance.doWhileSuspended(function() {
 
-        _addEndpoints("Window4", ["TopCenter", "BottomCenter"], ["LeftMiddle", "RightMiddle"]);
+        /*_addEndpoints("Window4", ["TopCenter", "TopCenter"], ["LeftMiddle", "RightMiddle"]);
         _addEndpoints("Window2", ["LeftMiddle", "BottomCenter"], ["TopCenter", "RightMiddle"]);
         _addEndpoints("Window3", ["RightMiddle", "BottomCenter"], ["LeftMiddle", "TopCenter"]);
-        _addEndpoints("Window1", ["LeftMiddle", "RightMiddle"], ["TopCenter", "BottomCenter"]);
+        _addEndpoints("Window1", ["LeftMiddle", "RightMiddle"], ["TopCenter", "BottomCenter"]);*/
 
         // listen for new connections; initialise them the same way we initialise the connections at startup.
         instance.bind("connection", function(connInfo, originalEvent) {
@@ -139,8 +157,7 @@ jsPlumb.ready(function() {
     });
 
     $('#addBoop').click(function() {
-        $('#flowchart-demo').append('<div id="boop" class="window"></div>');
-        instance.draggable(jsPlumb.getSelector(".flowchart-demo .window"), { grid: [20, 20] });
+        addBoop();
     });
 
 });
