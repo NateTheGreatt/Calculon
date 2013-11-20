@@ -19,31 +19,26 @@ jsPlumb.ready(function() {
     // this is the paint style for the connecting lines..
     var connectorPaintStyle = {
             lineWidth:4,
-            strokeStyle:"#61B7CF",
+            strokeStyle:"#fff",
             joinstyle:"round",
             outlineColor:"white",
-            outlineWidth:2
+            outlineWidth:0.1
         },
     // .. and this is the hover style.
         connectorHoverStyle = {
             lineWidth:4,
-            strokeStyle:"#216477",
+            strokeStyle:"#fff",
             outlineWidth:2,
             outlineColor:"white"
         },
         endpointHoverStyle = {
-            fillStyle:"#216477",
-            strokeStyle:"#216477"
+            fillStyle:"#fff",
+            strokeStyle:"#fff"
         },
     // the definition of source endpoints (the small blue ones)
         sourceEndpoint = {
             endpoint:"Dot",
-            paintStyle:{
-                strokeStyle:"#7AB02C",
-                fillStyle:"transparent",
-                radius:7,
-                lineWidth:3
-            },
+            paintStyle:{ fillStyle:"#fff",radius:8 },
             isSource:true,
             connector:[ "Flowchart", { stub:[40, 60], gap:10, cornerRadius:5, alwaysRespectStubs:true } ],
             connectorStyle:connectorPaintStyle,
@@ -53,7 +48,7 @@ jsPlumb.ready(function() {
             overlays:[
                 [ "Label", {
                     location:[0.5, 1.5],
-                    label:"Drag",
+                    label:"",
                     cssClass:"endpointSourceLabel"
                 } ]
             ]
@@ -61,13 +56,18 @@ jsPlumb.ready(function() {
     // the definition of target endpoints (will appear when the user drags a connection)
         targetEndpoint = {
             endpoint:"Dot",
-            paintStyle:{ fillStyle:"#7AB02C",radius:8 },
+            paintStyle:{
+                strokeStyle:"#fff",
+                fillStyle:"transparent",
+                radius:7,
+                lineWidth:3
+            },
             hoverPaintStyle:endpointHoverStyle,
             maxConnections:-1,
             dropOptions:{ hoverClass:"hover", activeClass:"active" },
             isTarget:true,
             overlays:[
-                [ "Label", { location:[0.5, -0.5], label:"Drop", cssClass:"endpointTargetLabel" } ]
+                [ "Label", { location:[0.5, -0.5], label:"", cssClass:"endpointTargetLabel" } ]
             ]
         },
         init = function(connection) {
@@ -94,10 +94,10 @@ jsPlumb.ready(function() {
     var addBoop = function() {
         $('.flowchart-demo').append("<div class='window' id='boop"+id+"'></div>");
         instance.addEndpoint("boop"+id, sourceEndpoint);
-        instance.addEndpoint("boop"+id, targetEndpoint);
-        instance.addEndpoint("boop"+id, targetEndpoint);
+        instance.addEndpoint("boop"+id, targetEndpoint, {anchor:"ContinuousTop"});
+        instance.addEndpoint("boop"+id, targetEndpoint, {anchor:"ContinuousTop"});
         var endpoints = instance.getEndpoints("boop"+id);
-        endpoints[0].anchor.x = 0.8;
+        endpoints[0].anchor.x = 0.5;
         endpoints[1].anchor.x = 0.2;
         endpoints[1].anchor.y = 0;
         endpoints[2].anchor.x = 0.4;

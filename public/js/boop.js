@@ -111,6 +111,10 @@ Boop.prototype =
         return this.type;
     },
 
+    setType : function(type) {
+        this.type = type;
+    },
+
     getId : function()
     {
         return this.id;

@@ -218,7 +218,7 @@ jsPlumb.ready(function() {
         $('.value').change(function() {
             var id = $(this).parent().attr('id').split('-')[1];
             boops[id].setValue($(this).val());
-            boops[id].update();
+//            boops[id].update();
             // redraw UI
             $('.value').trigger('redraw');
             saveProject();
