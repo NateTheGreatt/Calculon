@@ -128,7 +128,7 @@ Boop.prototype =
         }
         if(this.position.y != y)
         {
-            this.this.position.y = y;
+            this.position.y = y;
         }
         console.log('Position set: ('+x+','+y+')')
         this.update();
