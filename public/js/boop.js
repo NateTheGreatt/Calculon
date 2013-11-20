@@ -29,14 +29,19 @@ var $boop = $(document.createElement('div'))
 
 //<<-------------------------- Abastract Base Boop ----------------------------------->>
 
-function Point(x,y) {
+function Point(x,y)
+{
     this.x = x;
     this.y = y;
+}
+// TODO:
+function registerBoop(data)
+{
+
 }
 
 function Boop()
 {
-    // Back-end ----------------------------->>
     this.inputs = [];
     this.outputs = [];
     this.value = 0;
@@ -44,13 +49,18 @@ function Boop()
     this.type = 'boop';
     this.position = new Point(0,0);
 
-    // Front-end ---------------------------->>
-    /*this.display = document.createElement('div');
-     $(this.display)
-     .addClass('boop')
-     .html('Boop #'+this.id)
-     .attr('draggable', 'true');
-     $('#app').append(this.display);*/
+    var data =
+    {
+        inputs : this.inputs,
+        outputs : this.outputs,
+        value : this.value,
+        id : this.id,
+        type : this.type,
+        x : this.position.x,
+        y : this.position.y
+    }
+
+    registerBoop(data);
 }
 
 Boop.prototype =
@@ -74,31 +84,54 @@ Boop.prototype =
     // EVALUATE
     evaluate : function(){},		// to be overwritten by child class
 
-    getValue : function() {
+    getValue : function()
+    {
         return this.value;
     },
-    setValue : function(x) {
+    setValue : function(x)
+    {
+        if(this.value != x)
+        {
+            this.value = x;
+            // TODO: database update or insert new value
+        }
         console.log('Boop #'+this.id+' value has been set to '+x);
-        this.value = x;
     },
-    getType : function() {
+    getType : function()
+    {
         return this.type;
     },
-    setType : function(type) {
-        this.type = type;
+    setType : function(type)
+    {
+        if(this.type != type)
+        {
+            this.type = type;
+            // TODO: database update
+        }
     },
-    getId : function() {
+    getId : function()
+    {
         return this.id;
     },
 
-    setPos : function(x,y) {
-        this.x = x;
-        this.y = y;
+    setPos : function(x,y)
+    {
+        if(this.position.x != x)
+        {
+            this.position.x = x;
+            // TODO: database update
+        }
+        if(this.position.y != y)
+        {
+            this.this.position.y = y;
+            // TODO: database update
+        }
         console.log('Position set: ('+x+','+y+')')
     },
 
-    getPos : function() {
-        return {"x": this.x, "y": this.y};
+    getPos : function()
+    {
+        return {"x": this.position.x, "y": this.position.y};
     },
 
     // CONNECT TO
@@ -108,7 +141,7 @@ Boop.prototype =
 
         this.outputs.push(other);	// add the other boop to our output array
         this.update();				// update ourselves
-
+        // TODO: Add 'other' as a descendant of this boop in the closure table
         console.log('Boop' + this.id + ' connected to Boop' + other.id);  // log the connection
     },
 
@@ -121,7 +154,7 @@ Boop.prototype =
             other.inputs.splice(index,1); 			// remove ourselves from it
         }
         other.update(); 							// tell them to update
-
+        // TODO: Remove 'other' as a descendant of this boop in the closure table
         index = this.outputs.indexOf(other.id); 	// get the other boop's index in our output array
         if(index > -1)
         {
