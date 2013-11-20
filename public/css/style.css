@@ -1,6 +1,8 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url("../img/gridbg.png");
+  background-color:#0b2a49;
 }
 a {
   color: #00b7ff;

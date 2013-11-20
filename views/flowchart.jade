@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    link(rel='stylesheet', href='/css/flowchart.css')
+    button#addBoop Add Boop
+    #flowchart-demo.demo.flowchart-demo
+        #flowchartWindow1.window
+        #flowchartWindow2.window
+        #flowchartWindow3.window
+        #flowchartWindow4.window
+
+    script(src='js/jsplumb-flowchart.js')

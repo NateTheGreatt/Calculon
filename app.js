@@ -23,7 +23,7 @@ app.use(express.methodOverride());
 app.use(express.cookieParser('your secret here'));
 app.use(express.session());
 app.use(app.router);
-app.use(require('stylus').middleware(__dirname + '/public'));
+//app.use(require('stylus').middleware(__dirname + '/public'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
@@ -35,6 +35,9 @@ app.get('/', routes.index);
 app.get('/boop', function(req,res) {
     res.render('boop');
 });
+app.get('/flowchart', function(req,res) {
+    res.render('flowchart');
+})
 
 var db = mongoose.connect('mongodb://localhost/calculon');
 
