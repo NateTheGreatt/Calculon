@@ -37,17 +37,17 @@ function Point(x,y)
     this.y = y;
 }
 
+function updateDatabase()
+{
+    // TODO: update all boops in the array into the database and closure tables
+}
+
 function updateCollector(boop)
 {
     window.clearTimeout(timeoutID);                         // cancel timer
     timeoutID = window.setTimeout(updateDatabase, 500);    // set new timer
 
-    toSave.push(boop);
-
-    function updateDatabase()
-    {
-        // TODO: update all boops in the array into the database and closure tables
-    }
+    toSave.push(boop);          // add boop to array
 }
 
 function Boop()
@@ -69,7 +69,7 @@ function Boop()
         x : this.position.x,
         y : this.position.y
     }
-    update();
+    this.update();
 }
 
 Boop.prototype =

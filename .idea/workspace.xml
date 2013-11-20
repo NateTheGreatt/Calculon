@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7581c65-1d01-4e4a-90cd-e31fa967c98c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/grid9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/flowchart.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/flowchart.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jsplumb-flowchart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.styl" afterPath="$PROJECT_DIR$/public/css/style.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/boop.js" afterPath="$PROJECT_DIR$/public/js/boop.js" />
     </list>
     <ignored path="Calculon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,9 +17,9 @@
     <file path="/calculon.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384717769430" ignored="false" />
     <file path="/style.css" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384922491552" ignored="false" />
     <file path="/boop.jade" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383254655991" ignored="false" />
-    <file path="/boop.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384660713127" ignored="false" />
+    <file path="/boop.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384934875957" ignored="false" />
     <file path="/calculon-old.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383337617703" ignored="false" />
-    <file path="/Dummy.txt" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384900573781" ignored="false" />
+    <file path="/Dummy.txt" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384934802790" ignored="false" />
     <file path="$USER_HOME$/Art/Web Design/is421/bootstrap-node-project/package.json" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383609920319" ignored="false" />
     <file path="/.gitignore" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383638284572" ignored="false" />
     <file path="/a.dummy" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383765877472" ignored="false" />
@@ -94,7 +68,7 @@
           <file leaf-file-name="jsplumb-flowchart.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/js/jsplumb-flowchart.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="40" selection-start="68" selection-end="68" vertical-scroll-proportion="-1.36">
+                <state line="2" column="40" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -103,7 +77,7 @@
           <file leaf-file-name="boop.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/js/boop.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="68" column="72" selection-start="1895" selection-end="1895" vertical-scroll-proportion="1.2121739">
+                <state line="49" column="52" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.4383408">
                   <folding />
                 </state>
               </provider>
@@ -134,7 +108,7 @@
           <file leaf-file-name="flowchart.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/flowchart.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="32" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+                <state line="7" column="32" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -143,7 +117,7 @@
           <file leaf-file-name="flowchart.css" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/css/flowchart.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="38" column="3" selection-start="919" selection-end="919" vertical-scroll-proportion="0.54448396">
+                <state line="38" column="3" selection-start="919" selection-end="919" vertical-scroll-proportion="0.2825112">
                   <folding />
                 </state>
               </provider>
@@ -185,7 +159,6 @@
         <option value="$PROJECT_DIR$/public/js/jquery-1.9.1.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/views/layout.jade" />
-        <option value="$PROJECT_DIR$/public/js/boop.js" />
         <option value="$PROJECT_DIR$/public/js/calculon.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/index.jade" />
@@ -194,14 +167,15 @@
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/public/css/flowchart.css" />
         <option value="$PROJECT_DIR$/public/js/jsplumb-flowchart.js" />
+        <option value="$PROJECT_DIR$/public/js/boop.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="66" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="width" value="1862" />
+    <option name="height" value="1073" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -229,7 +203,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -314,16 +287,17 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -411,17 +385,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="66" y="-8" width="1862" height="1073" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897604" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.104902476" sideWeight="0.6597146" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10477235" sideWeight="0.6597146" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3402854" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34006375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -507,9 +481,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/jquery-ui-1.10.3.custom.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="47" selection-start="144558" selection-end="144558" vertical-scroll-proportion="0.09255898">
-          <folding />
-        </state>
+        <state line="6" column="47" selection-start="144558" selection-end="144558" vertical-scroll-proportion="0.09255898" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/jquery-ui-1.10.3.custom.js">
@@ -565,21 +537,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/flowchart.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="32" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/flowchart.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="3" selection-start="919" selection-end="919" vertical-scroll-proportion="0.54448396">
+        <state line="7" column="32" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/jsplumb-flowchart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="40" selection-start="68" selection-end="68" vertical-scroll-proportion="-1.36">
+        <state line="2" column="40" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -598,9 +563,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/flowchart.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="3" selection-start="919" selection-end="919" vertical-scroll-proportion="0.2825112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/boop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="72" selection-start="1895" selection-end="1895" vertical-scroll-proportion="1.2121739">
+        <state line="49" column="52" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.4383408">
           <folding />
         </state>
       </provider>
