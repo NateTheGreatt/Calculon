@@ -17,6 +17,8 @@ function extend(base, sub)
 
 // Fields
 var id = -1; // boop id number
+var toSave = [];
+var timeoutID;
 
 // jQuery Objects
 /*var $port = $(document.createElement('div'))
@@ -34,10 +36,18 @@ function Point(x,y)
     this.x = x;
     this.y = y;
 }
-// TODO:
-function registerBoop(data)
-{
 
+function updateCollector(boop)
+{
+    window.clearTimeout(timeoutID);                         // cancel timer
+    timeoutID = window.setTimeout(updateDatabase, 500);    // set new timer
+
+    toSave.push(boop);
+
+    function updateDatabase()
+    {
+        // TODO: update all boops in the array into the database and closure tables
+    }
 }
 
 function Boop()
@@ -59,8 +69,7 @@ function Boop()
         x : this.position.x,
         y : this.position.y
     }
-
-    registerBoop(data);
+    update();
 }
 
 Boop.prototype =
@@ -68,10 +77,9 @@ Boop.prototype =
     // UPDATE
     update : function()
     {
-
         if(this.inputs.length > 0)        // if we have any inputs
         {
-            this.value = this.evaluate(); // evaluate and set our output value
+            setValue(this.evaluate()); // evaluate and set our output value
         }
 
         this.outputs.filter(function(o)	// for each boop we output to
@@ -79,6 +87,7 @@ Boop.prototype =
             console.log('Updating: '+o);				// log who it is
             o.update();					// and update them
         });
+        updateCollector(this);
     },
 
     // EVALUATE
@@ -93,22 +102,15 @@ Boop.prototype =
         if(this.value != x)
         {
             this.value = x;
-            // TODO: database update or insert new value
         }
         console.log('Boop #'+this.id+' value has been set to '+x);
+        this.update();
     },
     getType : function()
     {
         return this.type;
     },
-    setType : function(type)
-    {
-        if(this.type != type)
-        {
-            this.type = type;
-            // TODO: database update
-        }
-    },
+
     getId : function()
     {
         return this.id;
@@ -119,14 +121,13 @@ Boop.prototype =
         if(this.position.x != x)
         {
             this.position.x = x;
-            // TODO: database update
         }
         if(this.position.y != y)
         {
             this.this.position.y = y;
-            // TODO: database update
         }
         console.log('Position set: ('+x+','+y+')')
+        this.update();
     },
 
     getPos : function()
@@ -141,7 +142,6 @@ Boop.prototype =
 
         this.outputs.push(other);	// add the other boop to our output array
         this.update();				// update ourselves
-        // TODO: Add 'other' as a descendant of this boop in the closure table
         console.log('Boop' + this.id + ' connected to Boop' + other.id);  // log the connection
     },
 
@@ -154,12 +154,12 @@ Boop.prototype =
             other.inputs.splice(index,1); 			// remove ourselves from it
         }
         other.update(); 							// tell them to update
-        // TODO: Remove 'other' as a descendant of this boop in the closure table
         index = this.outputs.indexOf(other.id); 	// get the other boop's index in our output array
         if(index > -1)
         {
             this.outputs.splice(index,1);			// remove them from it
         }
+        this.update();                              // update ourselves
     }
 }
 
