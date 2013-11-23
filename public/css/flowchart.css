@@ -16,14 +16,15 @@
     /*opacity:0.8;*/
     filter:alpha(opacity=80);
     text-align:center;
-    z-index:20; position:absolute;
+    z-index:20;
+    position:absolute;
     background-color:#fff;
     /*background-color:#eeeeef;*/
     color:black;
     font-family:helvetica;
     font-size:0.9em;
-    width:97px;
-    height:97px;
+    width:99px;
+    height:99px;
     padding:0;
 }
 

@@ -39,12 +39,14 @@ jsPlumb.ready(function() {
         sourceEndpoint = {
             endpoint:"Dot",
             paintStyle:{ fillStyle:"#fff",radius:8 },
-            isSource:true,
+            isSource: true,
+            isTarget: false,
+            maxConnections: -1,
             connector:[ "Flowchart", { stub:[40, 60], gap:10, cornerRadius:5, alwaysRespectStubs:true } ],
             connectorStyle:connectorPaintStyle,
             hoverPaintStyle:endpointHoverStyle,
             connectorHoverStyle:connectorHoverStyle,
-            dragOptions:{},
+//            dragOptions:{},
             overlays:[
                 [ "Label", {
                     location:[0.5, 1.5],
@@ -94,8 +96,8 @@ jsPlumb.ready(function() {
     var addBoop = function() {
         $('.flowchart-demo').append("<div class='window' id='boop"+id+"'></div>");
         instance.addEndpoint("boop"+id, sourceEndpoint);
-        instance.addEndpoint("boop"+id, targetEndpoint, {anchor:"ContinuousTop"});
-        instance.addEndpoint("boop"+id, targetEndpoint, {anchor:"ContinuousTop"});
+        instance.addEndpoint("boop"+id, targetEndpoint, {anchor:"Top"});
+        instance.addEndpoint("boop"+id, targetEndpoint, {anchor:"Top"});
         var endpoints = instance.getEndpoints("boop"+id);
         endpoints[0].anchor.x = 0.5;
         endpoints[1].anchor.x = 0.2;

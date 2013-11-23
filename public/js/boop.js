@@ -335,7 +335,7 @@ extend(Boop, SquareRootBoop);
 // @Override EVALUATE
 SquareRootBoop.prototype.evaluate = function()
 {
-    var sr = this.inputs[0];
+    var sr = this.inputs[0].getValue();
 
     console.log('value: ' + sr);
     sr = Math.sqrt(sr);
