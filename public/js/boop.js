@@ -31,12 +31,13 @@ var $boop = $(document.createElement('div'))
 
 //<<-------------------------- Abastract Base Boop ----------------------------------->>
 
-function Point(x,y)
+// A structure that holds two floats x, and y
+function Vector2(x,y)
 {
     this.x = x;
     this.y = y;
 }
-
+// function that takes the array toSave, and pushes those changes to the database.
 function updateDatabase()
 {
     // TODO: update all boops in the array into the database and closure tables
@@ -57,7 +58,7 @@ function Boop()
     this.value = 0;
     this.id = ++id;
     this.type = 'boop';
-    this.position = new Point(0,0);
+    this.position = new Vector2(0,0);
 
     var data =
     {
@@ -156,13 +157,13 @@ Boop.prototype =
     // DISCONNECT FROM    
     disconnectFrom : function(other)
     {
-        var index = other.inputs.indexOf(this.id); 	// get our index in the other boop's input array
+        var index = other.inputs.indexOf(this); 	// get our index in the other boop's input array
         if(index > -1)
         {
             other.inputs.splice(index,1); 			// remove ourselves from it
         }
         other.update(); 							// tell them to update
-        index = this.outputs.indexOf(other.id); 	// get the other boop's index in our output array
+        index = this.outputs.indexOf(other); 	// get the other boop's index in our output array
         if(index > -1)
         {
             this.outputs.splice(index,1);			// remove them from it
