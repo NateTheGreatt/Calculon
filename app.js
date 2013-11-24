@@ -31,7 +31,12 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
+//app.get('/', routes.index);
+
+app.get('/', function(req,res) {
+    res.render('calculon');
+})
+
 app.get('/boop', function(req,res) {
     res.render('boop');
 });

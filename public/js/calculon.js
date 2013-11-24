@@ -1,125 +1,90 @@
 var boops = [];
-var toSave = [];
 
 jsPlumb.ready(function() {
 
+    var instance = jsPlumb.getInstance({
+        // default drag options
+        DragOptions : { cursor: 'pointer', zIndex:2000 },
+        // the overlays to decorate each connection with.  note that the label overlay uses a function to generate the label text; in this
+        // case it returns the 'labelText' member that we set on each connection in the 'init' method below.
+        ConnectionOverlays : [
+            [ "Arrow", { location:1 } ],
+            [ "Label", {
+                location:0.1,
+                id:"label",
+                cssClass:"aLabel"
+            }]
+        ],
+        Container:"calculon"
+    });
 
-    jsPlumb.draggable($('.boop'));
-
-    var output = {
-        endpoint: "Rectangle",
-        isSource: true,
-        isTarget: false,
-        maxConnections: -1,
-        anchor: [1,0,1,0],
-        ConnectionsDetachable:true
-    }
-
-    var input = {
-        endpoint: "Dot",
-        isSource: false,
-        isTarget: true,
-        maxConnections: 1,
-        anchor: [0,1,-1,0],
-        connectorStyle: {
-            lineWidth:2,
-            strokeStyle:"#000"
-        }
-    }
-
-    //Fixes endpoints for specified target
-    function fixEndpoints(parentnode) {
-        //get list of current endpoints
-        var endpoints = jsPlumb.getEndpoints(parentnode);
-
-        //there are 2 types - input and output
-
-        var inputAr = $.grep(endpoints, function (elementOfArray, indexInArray) {
-            return elementOfArray.isSource; //input
-        });
-
-        var outputAr = $.grep(endpoints, function (elementOfArray, indexInArray) {
-            return elementOfArray.isTarget; //output
-        });
-
-        calculateEndpoint(inputAr, true);
-        calculateEndpoint(outputAr, false);
-
-        jsPlumb.repaintEverything();
-    }
-
-    //recalculate endpoint anchor position manually
-    function calculateEndpoint(endpointArray, isInput) {
-
-        //multiplyer
-        var mult = 1 / (endpointArray.length+1);
-
-        for (var i = 0; i < endpointArray.length; i++) {
-
-            if (isInput) {
-
-                //position
-                endpointArray[i].anchor.x = 1;
-                endpointArray[i].anchor.y = mult * (i + 1);
-            }
-            else {
-
-                //position
-                endpointArray[i].anchor.x = 0;
-                endpointArray[i].anchor.y = mult * (i + 1);
-            }
-        }
-    }
-
-    function saveProject() {
-        var msg = [];
-        boops.filter(function(boop) {
-            var ancestors = [],
-                descendants = [];
-            boop.inputs.filter(function(input) {
-                ancestors.push(input.getId());
+    // this is the paint style for the connecting lines..
+    var connectorPaintStyle = {
+            lineWidth:4,
+            strokeStyle:"#fff",
+            joinstyle:"round",
+            outlineColor:"white",
+            outlineWidth:0.1
+        },
+    // .. and this is the hover style.
+        connectorHoverStyle = {
+            lineWidth:4,
+            strokeStyle:"#fff",
+            outlineWidth:2,
+            outlineColor:"white"
+        },
+        endpointHoverStyle = {
+            fillStyle:"#fff",
+            strokeStyle:"#fff"
+        },
+    // the definition of source endpoints (the small blue ones)
+        sourceEndpoint = {
+            endpoint:"Dot",
+            paintStyle:{ fillStyle:"#fff",radius:8 },
+            isSource: true,
+            isTarget: false,
+            maxConnections: -1,
+            connector:[ "Flowchart", { stub:[40, 60], gap:10, cornerRadius:5, alwaysRespectStubs:true } ],
+            connectorStyle:connectorPaintStyle,
+            hoverPaintStyle:endpointHoverStyle,
+            connectorHoverStyle:connectorHoverStyle,
+//            dragOptions:{},
+            overlays:[
+                [ "Label", {
+                    location:[0.5, 1.5],
+                    label:"",
+                    cssClass:"endpointSourceLabel"
+                } ]
+            ]
+        },
+    // the definition of target endpoints (will appear when the user drags a connection)
+        targetEndpoint = {
+            endpoint:"Dot",
+            paintStyle:{
+                strokeStyle:"#fff",
+                fillStyle:"transparent",
+                radius:7,
+                lineWidth:3
+            },
+            hoverPaintStyle:endpointHoverStyle,
+            maxConnections:-1,
+            dropOptions:{ hoverClass:"hover", activeClass:"active" },
+            isTarget:true,
+            overlays:[
+                [ "Label", { location:[0.5, -0.5], label:"", cssClass:"endpointTargetLabel" } ]
+            ]
+        },
+        init = function(connection) {
+            connection.getOverlay("label").setLabel(connection.sourceId.substring(15) + "-" + connection.targetId.substring(15));
+            connection.bind("editCompleted", function(o) {
+                if (typeof console != "undefined")
+                    console.log("connection edited. path is now ", o.path);
             });
-            boop.outputs.filter(function(output) {
-                descendants.push(output.getId());
-            });
-            console.log(ancestors);
-            console.log(descendants);
-            msg.push({
-                "id": boop.getId(),
-                "type": boop.getType(),
-                "value": boop.getValue(),
-                "x": boop.getPos().x,
-                "y": boop.getPos().y,
-                "ancestors": ancestors,
-                "descendant": descendants
-            });
-        });
+        };
 
-        $.ajax({
-            type: "POST",
-            url: "/save",
-            data: {"boops":msg},
-            dataType: 'json'
-        }).done(function( data ) {
-            console.log( "Data Saved: " + data );
-        });
-    }
 
-    function saveBoop(id) {
-        var x = boops[id].getPos().x,
-            y = boops[id].getPos().y;
-
-        $.ajax({
-            type: "POST",
-            url: "/saveBoop",
-            data: {"id":id, "x":x, "y":y},
-            dataType: 'json'
-        }).done(function( data ) {
-                console.log( "Data Saved: " + data );
-        });
-    }
-
-    function addBoop(type) {
+    var i = 0;
+    var addBoop = function(type) {
 
         // instantiate the back-end boop
         var newBoop;
@@ -150,20 +115,15 @@ jsPlumb.ready(function() {
                 break;
         }
 
-        // create the front-end display
-        var boop = $('<div>').attr('id', 'boop-'+i).addClass('boop'),
-            addInput = $('<div>').addClass('button addInput').text('+'),
-            addOutput = $('<div>').addClass('button addOutput').text('+'),
-            del = $('<div>').addClass('button delete').text('x'),
-            title = $('<div>').addClass('title').text('Boop '+i),
-            type = $('<div>').text(type),
-            value = $('<input type="text">').addClass('value').val('0'),
-            connect = $('<div>').addClass('connect');
+        var $boop = $('<div>').attr('id', 'boop-'+i).addClass('boop'),
+            $title = $('<div>').addClass('title').text('Boop '+i),
+            $type = $('<div>').text(type),
+            $value = $('<input type="text">').addClass('value').val('0');
 
         var x = 100,
             y = 100;
 
-        boop.css({
+        $boop.css({
             'top': x,
             'left': y
         });
@@ -171,49 +131,26 @@ jsPlumb.ready(function() {
         newBoop.setPos(x,y);
         boops.push(newBoop);
 
-        jsPlumb.makeTarget(boop, {
-            anchor: 'Continuous'
-        });
+        $boop.append($title);
+        $boop.append($type);
+        $boop.append($value);
 
-        jsPlumb.makeSource(connect, {
-            parent: boop,
-            anchor: 'Continuous'
-        });
+        $('#calculon').append($boop);
 
-        boop.append(title);
-        boop.append(value);
-        boop.append(type);
-        //boop.append(connect);
-        boop.append(addInput);
-        boop.append(addOutput);
-        boop.append(del);
+        instance.addEndpoint("boop-"+i, sourceEndpoint);
+        instance.addEndpoint("boop-"+id, targetEndpoint, {anchor:"Top"});
+        instance.addEndpoint("boop-"+id, targetEndpoint, {anchor:"Top"});
+        var endpoints = instance.getEndpoints("boop-"+i);
+        endpoints[0].anchor.x = 0.5;
+        endpoints[1].anchor.x = 0.2;
+        endpoints[1].anchor.y = 0;
+        endpoints[2].anchor.x = 0.4;
+        endpoints[2].anchor.y = 0;
 
-        jsPlumb.draggable(boop, {
+        /*jsPlumb.draggable($boop, {
             containment: 'parent'
-        });
-
-        boop.find('.delete').click(function(e) {
-            jsPlumb.detachAllConnections($(this).parent());
-            $(this).parent().remove();
-            e.stopPropagation();
-        });
-
-        boop.find('.addInput').click(function() {
-            var parentnode = $(this)[0].parentNode;
-
-            jsPlumb.addEndpoint(parentnode,input);
-            fixEndpoints(parentnode);
-        });
-
-        boop.find('.addOutput').click(function() {
-            var parentnode = $(this)[0].parentNode;
-
-            jsPlumb.addEndpoint(parentnode,output);
-            fixEndpoints(parentnode);
-        });
-
-        $('#calculon').append(boop);
-        i++;
+        });*/
+        instance.draggable(jsPlumb.getSelector("#calculon .boop"), { grid: [20, 20] });
 
         $('.value').change(function() {
             var id = $(this).parent().attr('id').split('-')[1];
@@ -221,42 +158,90 @@ jsPlumb.ready(function() {
 //            boops[id].update();
             // redraw UI
             $('.value').trigger('redraw');
-            saveProject();
+//            saveProject();
         });
 
         $('.value').on('redraw', function() {
             var id = $(this).parent().attr('id').split('-')[1];
             $(this).val(boops[id].getValue());
             console.log('redrawing');
-            saveProject();
+//            saveProject();
         });
 
         $('.boop').mouseup(function(e) {
             var id = $(this).attr('id').split('-')[1];
             boops[id].setPos($(this).position().left, $(this).position().top);
-            saveBoop(id);
+//            saveBoop(id);
         });
 
-        saveBoop(i);
+        i++;
     }
 
-    var i = 0;
-    jsPlumb.bind('connection', function(info){
-        console.log(info);
-        var sourceId = info.sourceId.split('-')[1],
-            targetId = info.targetId.split('-')[1];
+    // suspend drawing and initialise.
+    instance.doWhileSuspended(function() {
 
-        boops[sourceId].connectTo(boops[targetId]);
-        $('#boop-'+targetId+' .value').val(boops[targetId].getValue());
-    });
+        /*_addEndpoints("Window4", ["TopCenter", "TopCenter"], ["LeftMiddle", "RightMiddle"]);
+        _addEndpoints("Window2", ["LeftMiddle", "BottomCenter"], ["TopCenter", "RightMiddle"]);
+        _addEndpoints("Window3", ["RightMiddle", "BottomCenter"], ["LeftMiddle", "TopCenter"]);
+        _addEndpoints("Window1", ["LeftMiddle", "RightMiddle"], ["TopCenter", "BottomCenter"]);*/
 
-    jsPlumb.bind('connectionDetached', function(info){
-        console.log(info);
-        /*var sourceId = info.sourceId.split('-')[1],
-            targetId = info.targetId.split('-')[1];
+        // listen for new connections; initialise them the same way we initialise the connections at startup.
+        /*instance.bind("connection", function(connInfo, originalEvent) {
+            init(connInfo.connection);
+        });*/
 
-        boops[sourceId].connectTo(boops[targetId]);
-        $('#boop-'+targetId+' .value').val(boops[targetId].getValue());*/
+        instance.bind('connection', function(info){
+            console.log(info);
+            var sourceId = info.sourceId.split('-')[1],
+                targetId = info.targetId.split('-')[1];
+
+            boops[sourceId].connectTo(boops[targetId]);
+            $('#boop-'+targetId+' .value').val(boops[targetId].getValue());
+        });
+
+        instance.bind('connectionDetached', function(info){
+            console.log(info);
+            /*var sourceId = info.sourceId.split('-')[1],
+             targetId = info.targetId.split('-')[1];
+
+             boops[sourceId].connectTo(boops[targetId]);
+             $('#boop-'+targetId+' .value').val(boops[targetId].getValue());*/
+        });
+
+        // make all the window divs draggable
+        instance.draggable(jsPlumb.getSelector(".calculon .window"), { grid: [20, 20] });
+        // THIS DEMO ONLY USES getSelector FOR CONVENIENCE. Use your library's appropriate selector
+        // method, or document.querySelectorAll:
+        //jsPlumb.draggable(document.querySelectorAll(".window"), { grid: [20, 20] });
+
+        // connect a few up
+        /*instance.connect({uuids:["Window2BottomCenter", "Window3TopCenter"], editable:true});
+        instance.connect({uuids:["Window2LeftMiddle", "Window4LeftMiddle"], editable:true});
+        instance.connect({uuids:["Window4TopCenter", "Window4RightMiddle"], editable:true});
+        instance.connect({uuids:["Window3RightMiddle", "Window2RightMiddle"], editable:true});
+        instance.connect({uuids:["Window4BottomCenter", "Window1TopCenter"], editable:true});
+        instance.connect({uuids:["Window3BottomCenter", "Window1BottomCenter"], editable:true});*/
+        //
+
+        //
+        // listen for clicks on connections, and offer to delete connections on click.
+        //
+        instance.bind("click", function(conn, originalEvent) {
+            if (confirm("Delete connection from " + conn.sourceId + " to " + conn.targetId + "?"))
+                jsPlumb.detach(conn);
+        });
+
+        instance.bind("connectionDrag", function(connection) {
+            console.log("connection " + connection.id + " is being dragged. suspendedElement is ", connection.suspendedElement, " of type ", connection.suspendedElementType);
+        });
+
+        instance.bind("connectionDragStop", function(connection) {
+            console.log("connection " + connection.id + " was dragged");
+        });
+
+        instance.bind("connectionMoved", function(params) {
+            console.log("connection " + params.connection.id + " was moved");
+        });
     });
 
     $('.addBoop').click(function() {
@@ -264,4 +249,3 @@ jsPlumb.ready(function() {
     });
 
 });
-
