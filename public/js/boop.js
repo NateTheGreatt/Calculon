@@ -53,6 +53,7 @@ function updateCollector(boop)
 
 function Boop()
 {
+    this.children = [];
     this.inputs = [];
     this.outputs = [];
     this.value = 0;
@@ -88,13 +89,23 @@ Boop.prototype =
         updateCollector(this);
     },
 
-    // EVALUATE  // to be overwritten by child class
-    evaluate : function(){},
+    // EVALUATE to be overwritten by child class
+    evaluate : function()
+    {
+        this.children.filter(function(o)
+        {
+            if(o.type == "input")
+            {
+                o.update();
+            }
+        });
+    },
 
     getValue : function()
     {
         return this.value;
     },
+
     setValue : function(x)
     {
         if(this.value != x)
