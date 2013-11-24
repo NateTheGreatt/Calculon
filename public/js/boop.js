@@ -92,13 +92,33 @@ Boop.prototype =
     // EVALUATE to be overwritten by child class
     evaluate : function()
     {
+        var outputBoop,
+            inputBoop,
+            valueBoop;
         this.children.filter(function(o)
         {
-            if(o.type == "input")
+            switch(o.type)
             {
-                o.update();
+                case "input":
+                    o.update();
+                    inputBoop = o;
+                    break;
+                case "output":
+                    outputBoop = o;
+                    break;
+                default:
+                    valueBoop = o;
+                    break;
             }
         });
+        if(inputBoop && outputBoop && valueBoop)
+        {
+            return outputBoop.getValue();
+        }
+        else
+        {
+            return 0;
+        }
     },
 
     getValue : function()
