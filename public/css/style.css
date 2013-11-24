@@ -107,6 +107,8 @@ a {
 }
 .boop .value {
     padding: 0;
+    border: 0;
+    font-size: 26px;
     width: 78px;
     text-align: center;
 }
