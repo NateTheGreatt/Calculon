@@ -77,21 +77,21 @@ Boop.prototype =
     // UPDATE
     update : function()
     {
-        if(this.inputs.length > 0)        // if we have any inputs
+        if(this.inputs.length > 0)          // if we have any inputs
         {
             this.setValue(this.evaluate()); // evaluate and set our output value
         }
 
-        this.outputs.filter(function(o)	// for each boop we output to
+        this.outputs.filter(function(o)	    // for each boop we output to
         {
-            console.log('Updating: '+o);				// log who it is
-            o.update();					// and update them
+            console.log('Updating: '+o);    // log who it is
+            o.update();					    // and update them
         });
         updateCollector(this);
     },
 
     // EVALUATE
-    evaluate : function(){},		// to be overwritten by child class
+    evaluate : function(){},	// to be overwritten by child class
 
     getValue : function()
     {
@@ -212,7 +212,7 @@ AdditionBoop.prototype.evaluate = function()
         sum += parseFloat(o.value);
     });
     console.log('sum: ' + sum);
-    
+
     return sum;
 }
 

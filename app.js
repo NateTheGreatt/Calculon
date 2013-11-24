@@ -107,7 +107,7 @@ app.post('/save', function(req,res) {
 });
 
 app.post('/saveBoop', function(req,res) {
-    console.log('hey');
+    console.log('hey could u save boop pls');
     BoopModel.findOne({id: req.body.id}, function(err,boop) {
         if(err) console.log('bad');
         else {
