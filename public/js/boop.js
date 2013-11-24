@@ -61,16 +61,6 @@ function Boop()
     this.type = 'boop';
     this.position = new Vector2(0,0);
 
-    var data =
-    {
-        inputs : this.inputs,
-        outputs : this.outputs,
-        value : this.value,
-        id : this.id,
-        type : this.type,
-        x : this.position.x,
-        y : this.position.y
-    }
     this.update();
 }
 
@@ -106,12 +96,9 @@ Boop.prototype =
                 case "output":
                     outputBoop = o;
                     break;
-                default:
-                    valueBoop = o;
-                    break;
             }
         });
-        if(inputBoop && outputBoop && valueBoop)
+        if(inputBoop && outputBoop)
         {
             return outputBoop.getValue();
         }
