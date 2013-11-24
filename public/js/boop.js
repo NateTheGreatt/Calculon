@@ -83,8 +83,7 @@ Boop.prototype =
     evaluate : function()
     {
         var outputBoop,
-            inputBoop,
-            valueBoop;
+            inputBoop;
         this.children.filter(function(o)
         {
             switch(o.type)
@@ -118,9 +117,9 @@ Boop.prototype =
         if(this.value != x)
         {
             this.value = x;
+            updateCollector(this);
         }
         console.log('Boop #'+this.id+' value has been set to '+x);
-        updateCollector(this);
     },
     getType : function()
     {
@@ -131,8 +130,8 @@ Boop.prototype =
         if(this.type != type)
         {
             this.type = type;
+            updateCollector(this);
         }
-        updateCollector(this);
     },
 
     getId : function()
@@ -145,13 +144,14 @@ Boop.prototype =
         if(this.position.x != x)
         {
             this.position.x = x;
+            updateCollector(this);
         }
         if(this.position.y != y)
         {
             this.position.y = y;
+            updateCollector(this);
         }
         console.log('Position set: ('+x+','+y+')')
-        updateCollector(this);
     },
 
     getPos : function()
@@ -183,7 +183,6 @@ Boop.prototype =
         {
             this.outputs.splice(index,1);		// remove them from it
         }
-        this.update();                          // update ourselves
     }
 }
 
@@ -199,6 +198,7 @@ function VariableBoop()
 // inherit from Boop
 extend(Boop, VariableBoop);
 
+//@Override EVALUATE
 VariableBoop.prototype.evaluate = function()
 {
     if(!this.inputs[0])
