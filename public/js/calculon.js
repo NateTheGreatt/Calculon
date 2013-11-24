@@ -201,11 +201,11 @@ jsPlumb.ready(function() {
 
         instance.bind('connectionDetached', function(info){
             console.log(info);
-            /*var sourceId = info.sourceId.split('-')[1],
-             targetId = info.targetId.split('-')[1];
+            var sourceId = info.sourceId.split('-')[1],
+                targetId = info.targetId.split('-')[1];
 
-             boops[sourceId].connectTo(boops[targetId]);
-             $('#boop-'+targetId+' .value').val(boops[targetId].getValue());*/
+             boops[sourceId].disconnectFrom(boops[targetId]);
+             $('#boop-'+targetId+' .value').val(boops[targetId].getValue());
         });
 
         // make all the window divs draggable
@@ -244,7 +244,7 @@ jsPlumb.ready(function() {
         });
     });
 
-    $('.addBoop').click(function() {
+    $(document).on("click", ".addBoop", function(event){
         addBoop($(this).html());
     });
 
