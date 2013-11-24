@@ -79,7 +79,7 @@ Boop.prototype =
     {
         if(this.inputs.length > 0)        // if we have any inputs
         {
-            setValue(this.evaluate()); // evaluate and set our output value
+            this.setValue(this.evaluate()); // evaluate and set our output value
         }
 
         this.outputs.filter(function(o)	// for each boop we output to
@@ -104,7 +104,7 @@ Boop.prototype =
             this.value = x;
         }
         console.log('Boop #'+this.id+' value has been set to '+x);
-        this.update();
+        updateCollector(this);
     },
     getType : function()
     {
@@ -112,7 +112,11 @@ Boop.prototype =
     },
 
     setType : function(type) {
-        this.type = type;
+        if(this.type != type)
+        {
+            this.type = type;
+        }
+        updateCollector(this);
     },
 
     getId : function()
@@ -131,7 +135,7 @@ Boop.prototype =
             this.position.y = y;
         }
         console.log('Position set: ('+x+','+y+')')
-        this.update();
+        updateCollector(this);
     },
 
     getPos : function()
@@ -208,7 +212,7 @@ AdditionBoop.prototype.evaluate = function()
         sum += parseFloat(o.value);
     });
     console.log('sum: ' + sum);
-    this.value = sum;
+    
     return sum;
 }
 

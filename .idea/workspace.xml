@@ -17,9 +17,9 @@
     <file path="/calculon.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384717769430" ignored="false" />
     <file path="/style.css" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384922491552" ignored="false" />
     <file path="/boop.jade" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383254655991" ignored="false" />
-    <file path="/boop.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384934875957" ignored="false" />
+    <file path="/boop.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1385259247146" ignored="false" />
     <file path="/calculon-old.js" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383337617703" ignored="false" />
-    <file path="/Dummy.txt" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1384934802790" ignored="false" />
+    <file path="/Dummy.txt" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1385259015153" ignored="false" />
     <file path="$USER_HOME$/Art/Web Design/is421/bootstrap-node-project/package.json" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383609920319" ignored="false" />
     <file path="/.gitignore" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383638284572" ignored="false" />
     <file path="/a.dummy" changelist="b7581c65-1d01-4e4a-90cd-e31fa967c98c" time="1383765877472" ignored="false" />
@@ -68,7 +68,7 @@
           <file leaf-file-name="jsplumb-flowchart.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/js/jsplumb-flowchart.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="40" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
+                <state line="4" column="40" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -77,7 +77,7 @@
           <file leaf-file-name="boop.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/js/boop.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="49" column="52" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.4383408">
+                <state line="214" column="4" selection-start="5269" selection-end="5269" vertical-scroll-proportion="0.41928253">
                   <folding />
                 </state>
               </provider>
@@ -108,7 +108,7 @@
           <file leaf-file-name="flowchart.jade" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/flowchart.jade">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="32" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+                <state line="8" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -117,7 +117,7 @@
           <file leaf-file-name="flowchart.css" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/css/flowchart.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="38" column="3" selection-start="919" selection-end="919" vertical-scroll-proportion="0.2825112">
+                <state line="39" column="3" selection-start="935" selection-end="935" vertical-scroll-proportion="0.26345292">
                   <folding />
                 </state>
               </provider>
@@ -126,7 +126,7 @@
           <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="28" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
+                <state line="11" column="28" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -165,8 +165,8 @@
         <option value="$PROJECT_DIR$/views/flowchart.jade" />
         <option value="$PROJECT_DIR$/public/css/style.styl" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
-        <option value="$PROJECT_DIR$/public/css/flowchart.css" />
         <option value="$PROJECT_DIR$/public/js/jsplumb-flowchart.js" />
+        <option value="$PROJECT_DIR$/public/css/flowchart.css" />
         <option value="$PROJECT_DIR$/public/js/boop.js" />
       </list>
     </option>
@@ -293,11 +293,11 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -385,7 +385,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="66" y="-8" width="1862" height="1073" extended-state="6" />
+    <frame x="66" y="-8" width="1862" height="1073" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -530,21 +530,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
+        <state line="11" column="28" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/flowchart.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="32" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+        <state line="8" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/jsplumb-flowchart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="40" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
+        <state line="4" column="40" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -565,14 +565,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/flowchart.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="3" selection-start="919" selection-end="919" vertical-scroll-proportion="0.2825112">
+        <state line="39" column="3" selection-start="935" selection-end="935" vertical-scroll-proportion="0.26345292">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/boop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="52" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.4383408">
+        <state line="214" column="4" selection-start="5269" selection-end="5269" vertical-scroll-proportion="0.41928253">
           <folding />
         </state>
       </provider>
