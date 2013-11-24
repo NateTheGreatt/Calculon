@@ -78,10 +78,7 @@ Boop.prototype =
     // UPDATE
     update : function()
     {
-        if(this.inputs.length > 0)          // if we have any inputs
-        {
-            this.setValue(this.evaluate()); // evaluate and set our output value
-        }
+        this.setValue(this.evaluate());     // evaluate and set our output value
 
         this.outputs.filter(function(o)	    // for each boop we output to
         {
@@ -91,8 +88,8 @@ Boop.prototype =
         updateCollector(this);
     },
 
-    // EVALUATE
-    evaluate : function(){},	// to be overwritten by child class
+    // EVALUATE  // to be overwritten by child class
+    evaluate : function(){},
 
     getValue : function()
     {
@@ -157,18 +154,18 @@ Boop.prototype =
     // DISCONNECT FROM    
     disconnectFrom : function(other)
     {
-        var index = other.inputs.indexOf(this); 	// get our index in the other boop's input array
+        var index = other.inputs.indexOf(this); // get our index in the other boop's input array
         if(index > -1)
         {
-            other.inputs.splice(index,1); 			// remove ourselves from it
+            other.inputs.splice(index,1); 		// remove ourselves from it
         }
-        other.update(); 							// tell them to update
+        other.update(); 						// tell them to update
         index = this.outputs.indexOf(other); 	// get the other boop's index in our output array
         if(index > -1)
         {
-            this.outputs.splice(index,1);			// remove them from it
+            this.outputs.splice(index,1);		// remove them from it
         }
-        this.update();                              // update ourselves
+        this.update();                          // update ourselves
     }
 }
 
@@ -184,11 +181,13 @@ function VariableBoop()
 // inherit from Boop
 extend(Boop, VariableBoop);
 
-// SET VALUE
-/*VariableBoop.prototype.setValue = function(value)
+VariableBoop.prototype.evaluate = function()
 {
-    this.value = value;
-}*/
+    if(!this.inputs[0])
+    {
+        return this.getValue();
+    }
+}
 
 //<<-------------------------- Addition Boop ----------------------------------->>
 
@@ -209,8 +208,8 @@ AdditionBoop.prototype.evaluate = function()
 
     this.inputs.filter(function(o)
     {
-        console.log('value: ' + o.value);
-        sum += parseFloat(o.value);
+        console.log('value: ' + o.getValue());
+        sum += parseFloat(o.getValue());
     });
     console.log('sum: ' + sum);
 
@@ -232,6 +231,10 @@ extend(Boop, SubtractionBoop);
 // @Override EVALUATE
 SubtractionBoop.prototype.evaluate = function()
 {
+    if(!this.inputs[0])
+    {
+        return 0;
+    }
     var dif = parseFloat(this.inputs[0].getValue());
 
     console.log('value: ' + dif);
@@ -259,6 +262,11 @@ extend(Boop, MultiplicationBoop);
 // @Override EVALUATE
 MultiplicationBoop.prototype.evaluate = function()
 {
+    if(!this.inputs[0])
+    {
+        return 0;
+    }
+
     var prod = 1;
 
     this.inputs.filter(function(o)
@@ -286,6 +294,11 @@ extend(Boop, DivisionBoop);
 // @Override EVALUATE
 DivisionBoop.prototype.evaluate = function()
 {
+    if(!this.inputs[0])
+    {
+        return 0;
+    }
+
     var quot = this.inputs[0].getValue();
 
     console.log('value: ' + quot);
@@ -313,6 +326,11 @@ extend(Boop, ExponentBoop);
 // @Override EVALUATE
 ExponentBoop.prototype.evaluate = function()
 {
+    if(!this.inputs[0])
+    {
+        return 0;
+    }
+
     var xprod = this.inputs[0].getValue();
 
     console.log('value: ' + xprod);
@@ -340,6 +358,11 @@ extend(Boop, SquareRootBoop);
 // @Override EVALUATE
 SquareRootBoop.prototype.evaluate = function()
 {
+    if(!this.inputs[0])
+    {
+        return 0;
+    }
+
     var sr = this.inputs[0];
 
     console.log('value: ' + sr);
@@ -363,6 +386,10 @@ extend(Boop, ModuloBoop);
 // @Override EVALUATE
 ModuloBoop.prototype.evaluate = function()
 {
+    if(!this.inputs[0])
+    {
+        return 0;
+    }
     var div = this.inputs[0].getValue();
 
     console.log('value: ' + div);
