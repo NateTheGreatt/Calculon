@@ -118,7 +118,7 @@ jsPlumb.ready(function() {
         var $boop = $('<div>').attr('id', 'boop-'+i).addClass('boop'),
             $title = $('<div>').addClass('title').text('Boop '+i),
             $type = $('<div>').text(type),
-            $value = $('<input type="text">').addClass('value').val('0');
+            $value = $('<input type="text">').addClass('value disabled').val('0');
 
         var x = 100,
             y = 100;
@@ -138,8 +138,8 @@ jsPlumb.ready(function() {
         $('#calculon').append($boop);
 
         instance.addEndpoint("boop-"+i, sourceEndpoint);
-        instance.addEndpoint("boop-"+id, targetEndpoint, {anchor:"Top"});
-        instance.addEndpoint("boop-"+id, targetEndpoint, {anchor:"Top"});
+        instance.addEndpoint("boop-"+i, targetEndpoint, {anchor:"Top"});
+        instance.addEndpoint("boop-"+i, targetEndpoint, {anchor:"Top"});
         var endpoints = instance.getEndpoints("boop-"+i);
         endpoints[0].anchor.x = 0.5;
         endpoints[1].anchor.x = 0.2;
