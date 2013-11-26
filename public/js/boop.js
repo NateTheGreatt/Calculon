@@ -44,14 +44,15 @@ function updateDatabase()
 {
     // TODO: update all boops in the array into the database and closure tables
 
-    $.ajax({
-        type: "POST",
-        url: "/save",
-        data: {"boops":toSave},
-        dataType: 'json'
-    }).done(function( data ) {
-            console.log( "Data Saved: " + data );
-        });
+//    $.ajax({
+//        type: "POST",
+//        url: "/save",
+//        data: {"boops":toSave},
+//        dataType: 'json'
+//    }).done(function( data )
+//        {
+//            console.log( "Data Saved: " + data );
+//        });
 }
 
 function updateCollector(boop)
@@ -138,7 +139,8 @@ Boop.prototype =
         return this.type;
     },
 
-    setType : function(type) {
+    setType : function(type)
+    {
         if(this.type != type)
         {
             this.type = type;
@@ -153,14 +155,19 @@ Boop.prototype =
 
     setPos : function(x,y)
     {
+        var changed=false;
         if(this.position.x != x)
         {
             this.position.x = x;
-            updateCollector(this);
+            changed=true;
         }
         if(this.position.y != y)
         {
             this.position.y = y;
+            changed=true;
+        }
+        if(changed)
+        {
             updateCollector(this);
         }
         console.log('Position set: ('+x+','+y+')')
@@ -203,8 +210,8 @@ Boop.prototype =
 function VariableBoop()
 {
     Boop.call(this);	// call parent constructor
-    this.setType('variable');
     console.log('Variable Boop Created');
+    this.setType('variable');
 };
 
 // inherit from Boop
