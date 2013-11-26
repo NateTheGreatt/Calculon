@@ -82,7 +82,7 @@ Boop.prototype =
     // UPDATE
     update : function()
     {
-        this.setValue(this.evaluate());     // evaluate and set our output value
+        this.value = this.evaluate();     // evaluate and set our output value
 
         this.outputs.filter(function(o)	    // for each boop we output to
         {
@@ -131,8 +131,9 @@ Boop.prototype =
         {
             this.value = x;
             updateCollector(this);
+            this.update();
         }
-        console.log('Boop #'+this.id+' value has been set to '+x);
+        console.log('Boop #'+this.getId()+' value has been set to '+x);
     },
     getType : function()
     {
@@ -182,10 +183,9 @@ Boop.prototype =
     connectTo : function(other)
     {
         other.inputs.push(this);	// add ourselves to the other boop's input array
-
         this.outputs.push(other);	// add the other boop to our output array
-        this.update();				// update ourselves
-        console.log('Boop' + this.id + ' connected to Boop' + other.id);  // log the connection
+        other.update();				// update them
+        console.log('Boop' + this.getId() + ' connected to Boop' + other.getId());
     },
 
     // DISCONNECT FROM    
@@ -220,10 +220,8 @@ extend(Boop, VariableBoop);
 //@Override EVALUATE
 VariableBoop.prototype.evaluate = function()
 {
-    if(!this.inputs[0])
-    {
-        return this.getValue();
-    }
+    var input = this.inputs[0];
+    return input ? input.getValue() : this.getValue();
 }
 
 //<<-------------------------- Addition Boop ----------------------------------->>
