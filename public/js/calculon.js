@@ -174,6 +174,19 @@ jsPlumb.ready(function() {
 //            saveBoop(id);
         });
 
+        $('.boop').bind('mousewheel', function(e) {
+            if(e.originalEvent.wheelDelta < 0) {
+                //scroll down
+                console.log('Down');
+            }else {
+                //scroll up
+                console.log('Up');
+            }
+
+            //prevent page fom scrolling
+            return false;
+        });
+
         i++;
     }
 
@@ -247,5 +260,33 @@ jsPlumb.ready(function() {
     $(document).on("click", ".addBoop", function(event){
         addBoop($(this).html());
     });
+
+    /*//Firefox
+    $('#elem').bind('DOMMouseScroll', function(e){
+        if(e.originalEvent.detail > 0) {
+            //scroll down
+            console.log('Down');
+        }else {
+            //scroll up
+            console.log('Up');
+        }
+
+        //prevent page fom scrolling
+        return false;
+    });
+
+    //IE, Opera, Safari
+    $('#elem').bind('mousewheel', function(e){
+        if(e.originalEvent.wheelDelta < 0) {
+            //scroll down
+            console.log('Down');
+        }else {
+            //scroll up
+            console.log('Up');
+        }
+
+        //prevent page fom scrolling
+        return false;
+    });*/
 
 });
