@@ -103,7 +103,8 @@ app.post('/save', function(req,res) {
         });
     });*/
 
-    res.send(201,boops);
+//    res.send(201,boops);
+    res.end(JSON.stringify(boops));
 });
 
 app.post('/saveBoop', function(req,res) {

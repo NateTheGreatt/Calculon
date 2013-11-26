@@ -15,8 +15,10 @@ function extend(base, sub)
      });*/
 }
 
+var boops = [];
+
 // Fields
-var id = -1; // boop id number
+var id = 0; // boop id number
 var toSave = [];
 var timeoutID;
 
@@ -41,6 +43,15 @@ function Vector2(x,y)
 function updateDatabase()
 {
     // TODO: update all boops in the array into the database and closure tables
+
+    $.ajax({
+        type: "POST",
+        url: "/save",
+        data: {"boops":toSave},
+        dataType: 'json'
+    }).done(function( data ) {
+            console.log( "Data Saved: " + data );
+        });
 }
 
 function updateCollector(boop)
@@ -61,7 +72,8 @@ function Boop()
     this.type = 'boop';
     this.position = new Vector2(0,0);
 
-    this.update();
+//    boops.push(this);
+//    this.update();
 }
 
 Boop.prototype =

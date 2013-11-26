@@ -1,5 +1,3 @@
-var boops = [];
-
 jsPlumb.ready(function() {
 
     var instance = jsPlumb.getInstance({
@@ -82,8 +80,6 @@ jsPlumb.ready(function() {
             });
         };
 
-
-    var i = 0;
     var addBoop = function(type) {
 
         // instantiate the back-end boop
@@ -115,8 +111,12 @@ jsPlumb.ready(function() {
                 break;
         }
 
-        var $boop = $('<div>').attr('id', 'boop-'+i).addClass('boop'),
-            $title = $('<div>').addClass('title').text('Boop '+i),
+        var id = newBoop.getId();
+
+        boops.push(newBoop);
+
+        var $boop = $('<div>').attr('id', 'boop-'+id).addClass('boop'),
+            $title = $('<div>').addClass('title').text('Boop '+id),
             $type = $('<div>').text(type),
             $value = $('<input type="text">').addClass('value disabled').val('0');
 
@@ -129,7 +129,6 @@ jsPlumb.ready(function() {
         });
 
         newBoop.setPos(x,y);
-        boops.push(newBoop);
 
         $boop.append($title);
         $boop.append($type);
@@ -137,10 +136,10 @@ jsPlumb.ready(function() {
 
         $('#calculon').append($boop);
 
-        instance.addEndpoint("boop-"+i, sourceEndpoint);
-        instance.addEndpoint("boop-"+i, targetEndpoint, {anchor:"Top"});
-        instance.addEndpoint("boop-"+i, targetEndpoint, {anchor:"Top"});
-        var endpoints = instance.getEndpoints("boop-"+i);
+        instance.addEndpoint("boop-"+id, sourceEndpoint);
+        instance.addEndpoint("boop-"+id, targetEndpoint, {anchor:"Top"});
+        instance.addEndpoint("boop-"+id, targetEndpoint, {anchor:"Top"});
+        var endpoints = instance.getEndpoints("boop-"+id);
         endpoints[0].anchor.x = 0.5;
         endpoints[1].anchor.x = 0.2;
         endpoints[1].anchor.y = 0;
@@ -186,8 +185,6 @@ jsPlumb.ready(function() {
             //prevent page fom scrolling
             return false;
         });
-
-        i++;
     }
 
     // suspend drawing and initialise.
