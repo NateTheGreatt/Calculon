@@ -149,7 +149,7 @@ jsPlumb.ready(function() {
         /*jsPlumb.draggable($boop, {
             containment: 'parent'
         });*/
-        instance.draggable(jsPlumb.getSelector("#calculon .boop"), { grid: [20, 20] });
+        instance.draggable(jsPlumb.getSelector("#calculon .boop"), { grid: [20, 20], containment: 'parent' });
 
         $('.value').change(function() {
             var id = $(this).parent().attr('id').split('-')[1];

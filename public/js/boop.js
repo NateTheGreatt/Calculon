@@ -18,7 +18,7 @@ function extend(base, sub)
 var boops = [];
 
 // Fields
-var id = 0; // boop id number
+var id = -1; // boop id number
 var toSave = [];
 var timeoutID;
 
@@ -400,7 +400,7 @@ SquareRootBoop.prototype.evaluate = function()
         return 0;
     }
 
-    var sr = this.inputs[0];
+    var sr = this.inputs[0].getValue();
 
     console.log('value: ' + sr);
     sr = Math.sqrt(sr);
