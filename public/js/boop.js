@@ -86,7 +86,7 @@ Boop.prototype =
 
         this.outputs.filter(function(o)	    // for each boop we output to
         {
-            console.log('Updating: '+o);    // log who it is
+            console.log('Boop'+this.id+ ' updating: Boop'+ o.id);    // log who it is
             o.update();					    // and update them
         });
         updateCollector(this);
