@@ -83,32 +83,85 @@ function updateCollector(boop)
     window.clearTimeout(timeoutID);                         // cancel timer
     timeoutID = window.setTimeout(updateDatabase, 2000);    // set new timer
 
-    for(var i=0;i<toSave.length;i++) {
-        if(toSave[i].id == boop.id) {
+    for(var i=0;i<toSave.length;i++)
+    {
+        if(toSave[i].id == boop.id)
+        {
             toSave[i] = boop;
             return;
         }
     }
-
     toSave.push(boop);          // add boop to array
 }
 
-function Connection(id) {
+function Connection(id)
+{
     this.id = id;
-    this.update = function() {
-        boop[id].update();
-    }
+    this.update = function()
+    {
+        if(id > -1)
+        {
+            boops[this.id].update();
+        }
+    };
+    this.getType = function()
+    {
+        if(id > -1)
+        {
+            return boops[this.id].getType();
+        }
+    };
+    this.getValue = function()
+    {
+        if(id > -1)
+        {
+            return boops[this.id].getValue();
+        }
+    };
+    this.plugin = function(connectionId)
+    {
+        if(id > -1)
+        {
+            boops[this.id].plugin(connectionId);
+        }
+    };
+    this.unplug = function(connectionId)
+    {
+        if(id > -1)
+        {
+            boops[this.id].unplug(connectionId);
+        }
+    };
+    this.connectTo = function(connection)
+    {
+        if(connection)
+        {
+            boops[this.id].connectTo(connection);
+        }
+    };
+    this.disconnectFrom = function(connection)
+    {
+        if(connection)
+        {
+            boops[this.id].disconnectFrom(connection);
+        }
+    };
 }
 
 function Boop()
 {
     this.children = [];
+    this.childInputs = [];
+    this.childOutput;
     this.inputs = [];
     this.outputs = [];
     this.value = 0;
     this.id = ++id;
     this.type = 'boop';
     this.position = new Vector2(0,0);
+    this.initializePorts(); // this wasnt here initially...
+                            // but boops need port initialization too, but operator boops can't
+                            // just inherit this because type hasn't been set yet.
 
     boops.push(this);
     console.log("boop"+this.id+" constructed");
@@ -117,7 +170,6 @@ function Boop()
 
 Boop.prototype =
 {
-    // UPDATE
     update : function()
     {
         this.value = this.evaluate();     // evaluate and set our output value
@@ -133,23 +185,32 @@ Boop.prototype =
     // EVALUATE to be overwritten by child class
     evaluate : function()
     {
-        var output = [],
-            inputs = [];
+        // parse children
+        this.childInputs = [];
         this.children.filter(function(o)
         {
-            switch(o.type)
+            switch(o.getType())
             {
                 case "input":
                     o.update();
-                    inputs.push(o);
+                    this.childInputs.push(o);
                     break;
                 case "output":
-                    output = o;
+                    this.childOutput = o;
                     break;
             }
         });
-        if(inputs.length > 0 && output)
+        // evaluate children
+        if(this.childInputs.length > 0 && this.childOutput)
         {
+            for(var i = 0; i < this.childInputs.length; ++i)
+            {   //plug our inputs into the inner cluster's inputs and update them
+                if(this.inputs[i])
+                {
+                    this.childInputs[i].plugin(this.inputs[i].getId());
+                    this.childInputs[i].update();
+                }
+            }
             return output.getValue();
         }
         else
@@ -173,6 +234,7 @@ Boop.prototype =
         }
         console.log('Boop #'+this.getId()+' value has been set to '+x);
     },
+
     getType : function()
     {
         return this.type;
@@ -180,6 +242,7 @@ Boop.prototype =
 
     setType : function(type)
     {
+        console.log('was '+this.type + ' now is ' + type);
         if(this.type != type)
         {
             this.type = type;
@@ -190,6 +253,11 @@ Boop.prototype =
     getId : function()
     {
         return this.id;
+    },
+
+    getPos : function()
+    {
+        return {"x": this.position.x, "y": this.position.y};
     },
 
     setPos : function(x,y)
@@ -212,34 +280,122 @@ Boop.prototype =
         console.log('Position set: ('+x+','+y+')')
     },
 
-    getPos : function()
-    {
-        return {"x": this.position.x, "y": this.position.y};
-    },
-
-    // CONNECT TO
     connectTo : function(other)
     {
-        var con = new Connection(other.id);
-        other.inputs.push(this);	// add ourselves to the other boop's input array
-        this.outputs.push(other);	// add the other boop to our output array
-        other.update();				// update them
+        other.plugin(this.getId());         // add ourselves to the other boop's input array
+        this.createOutputPort(other.getId());	// add the new connection to our output array
+        other.update();				        // update them
+
         console.log('Boop' + this.getId() + ' connected to Boop' + other.getId());
     },
 
-    // DISCONNECT FROM    
     disconnectFrom : function(other)
     {
-        var index = other.inputs.indexOf(this); // get our index in the other boop's input array
-        if(index > -1)
+        other.unplug(this.getId()); // remove ourselves from the other boop's inputs
+        other.update(); 			// tell them to update
+        this.unplug(other.getId()); // remove them from our outputs
+
+        console.log('Boop' + this.getId() + ' disconnected from Boop' + other.getId());
+    },
+
+    plugin : function(id)
+    {
+        switch(this.getType())
         {
-            other.inputs.splice(index,1); 		// remove ourselves from it
+            case 'variable':    // can only take one input
+                if(this.inputs[0].id == -1)
+                {
+                    this.inputs[0].id = id;
+                }
+                break;
+            case 'addition':        // creates a new connection for every new plugin
+                this.createInputPort(id);
+                break;
+            case 'multiplication':  // creates a new connection for every new plugin
+                this.createInputPort(id);
+                break;
+            default:
+                _.any(this.inputs,function(connection)  // everything else, just assign the plugin
+                {                                       // to the next free connection
+                    if(connection.id == -1)
+                    {
+                        connection.id = id;
+                        return true;
+                    }
+                    return false;
+                });
+                break;
         }
-        other.update(); 						// tell them to update
-        index = this.outputs.indexOf(other); 	// get the other boop's index in our output array
-        if(index > -1)
+    },
+
+    unplug : function(id)
+    {
+        _.any(this.outputs, function(connection)
         {
-            this.outputs.splice(index,1);		// remove them from it
+            if(connection.id == id)
+            {
+                connection.id = -1;
+                return true;
+            }
+            return false;
+        });
+    },
+    // creating ports at instantiation
+    initializePorts : function()
+    {
+        console.log('initializing ports for ' + this.getType())
+        this.inputs = [];
+        switch(this.getType())
+        {
+            case 'variable':
+                this.createInputPort();
+                break;
+            case 'subtraction':
+                this.createInputPort();
+                this.createInputPort();
+                break;
+            case 'division':
+                this.createInputPort();
+                this.createInputPort();
+                break;
+            case 'exponent':
+                this.createInputPort();
+                this.createInputPort();
+                break;
+            case 'square root':
+                this.createInputPort();
+                break;
+            case 'modulo':
+                this.createInputPort();
+                this.createInputPort();
+                break;
+            case 'boop':
+                this.evaluate();                    // evaluate children
+                this.childInputs.filter(function()  // boop has only as many inputs as childInputs
+                {
+                    this.createInputPort();
+                });
+                break;
+        }
+    },
+
+    createInputPort : function(connectionId)
+    {
+        if(connectionId)
+        {
+            this.inputs.push(new Connection(connectionId));
+        }
+        else
+        {
+            this.inputs.push(new Connection(-1));
+        }
+    },
+
+    createOutputPort : function(connectionId)
+    {
+        if(connectionId)
+        {
+            this.outputs.push(new Connection(connectionId));
         }
     }
 }
@@ -251,7 +407,8 @@ function VariableBoop()
     Boop.call(this);	// call parent constructor
     console.log('Variable Boop Created');
     this.setType('variable');
-};
+    this.initializePorts(); //relies on type being set 
+}
 
 // inherit from Boop
 extend(Boop, VariableBoop);
@@ -260,7 +417,12 @@ extend(Boop, VariableBoop);
 VariableBoop.prototype.evaluate = function()
 {
     var input = this.inputs[0];
-    return input ? input.getValue() : this.getValue();
+    if(input)
+    {
+        console.log('variable has input of ' + input.getValue());
+        var value = input.getValue();
+        return value ? value : this.getValue();
+    }
 }
 
 //<<-------------------------- Addition Boop ----------------------------------->>
@@ -297,6 +459,7 @@ function SubtractionBoop()
     Boop.call(this);	// call parent constructor
     this.setType('subtraction');
     console.log('Subtraction Boop Created');
+    this.initializePorts(); //relies on type being set
 }
 
 //inherit from Boop
@@ -328,6 +491,7 @@ function MultiplicationBoop()
     Boop.call(this);	// call parent constructor
     this.setType('multiplication');
     console.log('Multiplication Boop Created');
+    this.initializePorts(); //relies on type being set
 }
 
 //inherit from Boop
@@ -360,6 +524,7 @@ function DivisionBoop()
     Boop.call(this);	// call parent constructor
     this.setType('division');
     console.log('Division Boop Created');
+    this.initializePorts(); //relies on type being set
 }
 
 //inherit from Boop
@@ -392,6 +557,7 @@ function ExponentBoop()
     Boop.call(this);	// call parent constructor
     this.setType('exponent');
     console.log('Exponent Boop Created');
+    this.initializePorts(); //relies on type being set
 }
 
 //inherit from Boop
@@ -424,6 +590,7 @@ function SquareRootBoop()
     Boop.call(this);	// call parent constructor
     this.setType('squareroot');
     console.log('Square Root Boop Created');
+    this.initializePorts(); //relies on type being set
 }
 
 //inherit from Boop
@@ -452,6 +619,7 @@ function ModuloBoop()
     Boop.call(this);	// call parent constructor
     this.setType('modulo');
     console.log('Modulo Boop Created');
+    this.initializePorts(); //relies on type being set
 }
 
 //inherit from Boop
