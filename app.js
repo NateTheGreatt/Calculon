@@ -74,9 +74,13 @@ var ClosureSchema = new mongoose.Schema({
 
 var ClosureModel = mongoose.model('closure', ClosureSchema);
 
+app.post('/test', function(req,res) {
+    res.end(JSON.stringify(req.body.test));
+})
+
 app.post('/save', function(req,res) {
 
-    var boops = req.body.boops;
+    var boops = req.body.collection;
 
     console.log(boops);
 

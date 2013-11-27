@@ -18,7 +18,7 @@ function extend(base, sub)
 var boops = [];
 
 // Fields
-var id = -1; // boop id number
+var id = -1; // start at -1 so the first boop ID is 0
 var toSave = [];
 var timeoutID;
 
@@ -44,21 +44,41 @@ function updateDatabase()
 {
     // TODO: update all boops in the array into the database and closure tables
 
-//    $.ajax({
-//        type: "POST",
-//        url: "/save",
-//        data: {"boops":toSave},
-//        dataType: 'json'
-//    }).done(function( data )
-//        {
-//            console.log( "Data Saved: " + data );
-//        });
+    console.log('update :');
+    console.log(toSave);
+
+    $.ajax({
+     type: "POST",
+     url: "/test",
+     data: {"test":JSON.stringify(toSave)},
+     dataType: 'json'
+     }).done(function( data ) {
+        console.log( "Data Saved: " + data );
+     });
+
+    /*$.ajax({
+        type: "POST",
+        url: "/save",
+        data: {"collection":toSave},
+        dataType: 'json'
+    });*/
+        /*.done(function( data )
+        {
+            console.log( "Data Saved: " + data );
+        });*/
 }
 
 function updateCollector(boop)
 {
     window.clearTimeout(timeoutID);                         // cancel timer
-    timeoutID = window.setTimeout(updateDatabase, 500);    // set new timer
+    timeoutID = window.setTimeout(updateDatabase, 2000);    // set new timer
+
+    for(var i=0;i<toSave.length;i++) {
+        if(toSave[i].id == boop.id) {
+            toSave[i] = boop;
+            return;
+        }
+    }
 
     toSave.push(boop);          // add boop to array
 }
@@ -73,7 +93,8 @@ function Boop()
     this.type = 'boop';
     this.position = new Vector2(0,0);
 
-//    boops.push(this);
+    boops.push(this);
+    console.log("boop"+this.id+" constructed");
 //    this.update();
 }
 
@@ -95,24 +116,24 @@ Boop.prototype =
     // EVALUATE to be overwritten by child class
     evaluate : function()
     {
-        var outputBoop,
-            inputBoop;
+        var output,
+            inputs;
         this.children.filter(function(o)
         {
             switch(o.type)
             {
                 case "input":
                     o.update();
-                    inputBoop = o;
+                    inputs.push(o);
                     break;
                 case "output":
-                    outputBoop = o;
+                    output = o;
                     break;
             }
         });
-        if(inputBoop && outputBoop)
+        if(inputs.length > 0 && output)
         {
-            return outputBoop.getValue();
+            return output.getValue();
         }
         else
         {

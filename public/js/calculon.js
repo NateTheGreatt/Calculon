@@ -113,9 +113,8 @@ jsPlumb.ready(function() {
 
         var id = newBoop.getId();
 
-        boops.push(newBoop);
-
-        var $boop = $('<div>').attr('id', 'boop-'+id).addClass('boop'),
+        var $boopWrapper = $('<div>').addClass('boopWrapper'),
+            $boop = $('<div>').attr('id', 'boop-'+id).addClass('boop'),
             $title = $('<div>').addClass('title').text('Boop '+id),
             $type = $('<div>').text(type),
             $value = $('<input type="text">').addClass('value disabled').val('0');
@@ -134,7 +133,9 @@ jsPlumb.ready(function() {
         $boop.append($type);
         $boop.append($value);
 
-        $('#calculon').append($boop);
+        $boopWrapper.append($boop);
+
+        $('#calculon').append($boopWrapper);
 
         instance.addEndpoint("boop-"+id, sourceEndpoint);
         instance.addEndpoint("boop-"+id, targetEndpoint, {anchor:"Top"});
@@ -149,28 +150,38 @@ jsPlumb.ready(function() {
         /*jsPlumb.draggable($boop, {
             containment: 'parent'
         });*/
-        instance.draggable(jsPlumb.getSelector("#calculon .boop"), { grid: [20, 20], containment: 'parent' });
+        instance.draggable(jsPlumb.getSelector("#calculon .boopWrapper"), { grid: [20, 20], containment: 'parent' });
 
         $('.value').change(function() {
             var id = $(this).parent().attr('id').split('-')[1];
             boops[id].setValue($(this).val());
 //            boops[id].update();
             // redraw UI
+            $(this).addClass('.toRedraw');
             $('.value').trigger('redraw');
 //            saveProject();
         });
 
+        var demoTimeout;
         $('.value').on('redraw', function() {
             var id = $(this).parent().attr('id').split('-')[1];
             $(this).val(boops[id].getValue());
             console.log('redrawing');
-//            saveProject();
+
+            var $parent = $(this).parent();
+            $parent.jrumble({
+                x: 2,
+                y: 2,
+                rotation: 1
+            });
+            clearTimeout(demoTimeout);
+            $parent.trigger('startRumble');
+            demoTimeout = setTimeout(function(){$parent.trigger('stopRumble')}, 150);
         });
 
         $('.boop').mouseup(function(e) {
             var id = $(this).attr('id').split('-')[1];
             boops[id].setPos($(this).position().left, $(this).position().top);
-//            saveBoop(id);
         });
 
         $('.boop').bind('mousewheel', function(e) {
@@ -207,6 +218,7 @@ jsPlumb.ready(function() {
 
             boops[sourceId].connectTo(boops[targetId]);
             $('#boop-'+targetId+' .value').val(boops[targetId].getValue());
+            $('.value').trigger('redraw');
         });
 
         instance.bind('connectionDetached', function(info){
@@ -216,6 +228,9 @@ jsPlumb.ready(function() {
 
              boops[sourceId].disconnectFrom(boops[targetId]);
              $('#boop-'+targetId+' .value').val(boops[targetId].getValue());
+            $('.value').trigger('redraw');
+
+
         });
 
         // make all the window divs draggable
