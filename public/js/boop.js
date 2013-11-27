@@ -47,14 +47,24 @@ function updateDatabase()
     console.log('update :');
     console.log(toSave);
 
+    /*var boopArray = [],
+        ioArray = [];
+
+    toSave.filter(function(_boop) {
+        var tmp = {};
+        tmp.push({
+            ""
+        })
+    });
+
     $.ajax({
      type: "POST",
      url: "/test",
-     data: {"test":JSON.stringify(toSave)},
+     data: {"boops":JSON.stringify(boopArray), "io":JSON.stringify()},
      dataType: 'json'
      }).done(function( data ) {
         console.log( "Data Saved: " + data );
-     });
+     });*/
 
     /*$.ajax({
         type: "POST",
@@ -81,6 +91,13 @@ function updateCollector(boop)
     }
 
     toSave.push(boop);          // add boop to array
+}
+
+function Connection(id) {
+    this.id = id;
+    this.update = function() {
+        boop[id].update();
+    }
 }
 
 function Boop()
@@ -203,6 +220,7 @@ Boop.prototype =
     // CONNECT TO
     connectTo : function(other)
     {
+        var con = new Connection(other.id);
         other.inputs.push(this);	// add ourselves to the other boop's input array
         this.outputs.push(other);	// add the other boop to our output array
         other.update();				// update them
