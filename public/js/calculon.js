@@ -153,19 +153,21 @@ jsPlumb.ready(function() {
         instance.draggable(jsPlumb.getSelector("#calculon .boopWrapper"), { grid: [20, 20], containment: 'parent' });
 
         $('.value').change(function() {
-            /*var id = $(this).parent().attr('id').split('-')[1];
-            boops[id].setValue($(this).val());*/
+            var id = $(this).parent().attr('id').split('-')[1];
+            boops[id].setValue($(this).val());
             // redraw UI
-            $(this).addClass('.toRedraw');
-            $('.toRedraw').trigger('redraw');
+//            $(this).addClass('.toRedraw');
+//            $('.toRedraw').trigger('redraw');
+            $('.value').trigger('redraw');
         });
 
         var demoTimeout;
-        $('.toRedraw').on('redraw', function() {
+        $('.value').on('redraw', function() {
+            console.log('hello/?');
             var id = $(this).parent().attr('id').split('-')[1];
 
-            if(isFinite(boops[id].getValue())) $(this).val("lol"+boops[id].getValue());
-            else $(this).val("no way");
+            if(isFinite(boops[id].getValue())) $(this).val(boops[id].getValue());
+            else $(this).val("&infin;");
 
             $(this).removeClass('.toRedraw');
             console.log('redrawing');
