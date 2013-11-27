@@ -133,8 +133,8 @@ Boop.prototype =
     // EVALUATE to be overwritten by child class
     evaluate : function()
     {
-        var output,
-            inputs;
+        var output = [],
+            inputs = [];
         this.children.filter(function(o)
         {
             switch(o.type)
