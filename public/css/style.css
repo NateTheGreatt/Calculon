@@ -102,8 +102,8 @@ a {
     -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 1);
     -moz-box-shadow:    0px 3px 7px rgba(0, 0, 0, 1);
     box-shadow:         0px 3px 7px rgba(0, 0, 0, 1);
-    width:100%;
-    height:800px;
+    width:2000px;
+    height:2000px;
     background: url("../img/gridbg2.png");
     z-index: 1;
     /*background-color: rgba(0, 0, 0, 0.49);*/
@@ -124,12 +124,13 @@ a {
     -moz-box-shadow:    0px 3px 7px rgba(0, 0, 0, 1);
     box-shadow:         0px 3px 7px rgba(0, 0, 0, 1);*/
     border-radius:0.5em;
+    border:0;
     /*opacity:0.8;*/
     filter:alpha(opacity=80);
     text-align:center;
     z-index:20;
     display:block;
-    background-color:#fff;
+    background-color:#00b7ff;
     /*background-color:#eeeeef;*/
     color:black;
     font-family:helvetica;
@@ -152,6 +153,7 @@ a {
     width: 78px;
     font-weight:bold;
     color:#fff;
+    background-color: rgba(0,0,0,0);
     text-shadow: 0 1px 0 #ccc,
                 0 2px 0 #c9c9c9,
                 0 3px 0 #bbb,

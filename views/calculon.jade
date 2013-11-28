@@ -1,17 +1,17 @@
 extends layout
 
 block content
-    .wrapper
-        .app-header
-            button.addBoop.btn.btn-default.btn-sm(type='button') Variable
-            button.addBoop.btn.btn-default.btn-sm(type='button') Addition
-            button.addBoop.btn.btn-default.btn-sm(type='button') Subtraction
-            button.addBoop.btn.btn-default.btn-sm(type='button') Multiplication
-            button.addBoop.btn.btn-default.btn-sm(type='button') Division
-            button.addBoop.btn.btn-default.btn-sm(type='button') Exponent
-            button.addBoop.btn.btn-default.btn-sm(type='button') Square Root
-            button.addBoop.btn.btn-default.btn-sm(type='button') Modulo
-        #calculon.calculon
+    .app-header
+        button.addBoop.btn.btn-default.btn-sm(type='button') Variable
+        button.addBoop.btn.btn-default.btn-sm(type='button') Addition
+        button.addBoop.btn.btn-default.btn-sm(type='button') Subtraction
+        button.addBoop.btn.btn-default.btn-sm(type='button') Multiplication
+        button.addBoop.btn.btn-default.btn-sm(type='button') Division
+        button.addBoop.btn.btn-default.btn-sm(type='button') Exponent
+        button.addBoop.btn.btn-default.btn-sm(type='button') Square Root
+        button.addBoop.btn.btn-default.btn-sm(type='button') Modulo
+        input(type='text', id='projectId', placeholder='project id', value='1')
+    #calculon.calculon
 
     script(src='js/boop.js')
     script(src='js/calculon.js')

@@ -137,7 +137,15 @@ jsPlumb.ready(function() {
 
         $('#calculon').append($boopWrapper);
 
-        instance.addEndpoint("boop-"+id, sourceEndpoint);
+        for(var i=0;i<newBoop.getMaxOutputs();i++) {
+            instance.addEndpoint("boop-"+id, sourceEndpoint);
+        }
+        for(var i=0;i<newBoop.getMaxInputs();i++) {
+            console.log('input added');
+            instance.addEndpoint("boop-"+id, targetEndpoint, {anchor:"ContinuousTop"});
+        }
+
+        /*instance.addEndpoint("boop-"+id, sourceEndpoint);
         instance.addEndpoint("boop-"+id, targetEndpoint, {anchor:"Top"});
         instance.addEndpoint("boop-"+id, targetEndpoint, {anchor:"Top"});
         var endpoints = instance.getEndpoints("boop-"+id);
@@ -145,7 +153,7 @@ jsPlumb.ready(function() {
         endpoints[1].anchor.x = 0.2;
         endpoints[1].anchor.y = 0;
         endpoints[2].anchor.x = 0.4;
-        endpoints[2].anchor.y = 0;
+        endpoints[2].anchor.y = 0;*/
 
         /*jsPlumb.draggable($boop, {
             containment: 'parent'
@@ -163,11 +171,9 @@ jsPlumb.ready(function() {
 
         var demoTimeout;
         $('.value').on('redraw', function() {
-            console.log('hello/?');
             var id = $(this).parent().attr('id').split('-')[1];
 
-            if(isFinite(boops[id].getValue())) $(this).val(boops[id].getValue());
-            else $(this).val("&infin;");
+            $(this).val(boops[id].getValue());
 
             $(this).removeClass('.toRedraw');
             console.log('redrawing');
@@ -230,10 +236,9 @@ jsPlumb.ready(function() {
             var sourceId = info.sourceId.split('-')[1],
                 targetId = info.targetId.split('-')[1];
 
-             boops[sourceId].disconnectFrom(boops[targetId]);
-             $('#boop-'+targetId+' .value').val(boops[targetId].getValue());
+            boops[sourceId].disconnectFrom(boops[targetId]);
+            $('#boop-'+targetId+' .value').val(boops[targetId].getValue());
             $('.value').trigger('redraw');
-
 
         });
 
@@ -277,32 +282,21 @@ jsPlumb.ready(function() {
         addBoop($(this).html());
     });
 
-    /*//Firefox
-    $('#elem').bind('DOMMouseScroll', function(e){
-        if(e.originalEvent.detail > 0) {
-            //scroll down
-            console.log('Down');
-        }else {
-            //scroll up
-            console.log('Up');
-        }
+    $('.calculon').mousedown(function(e){
+        switch(e.which)
+        {
+            case 1:
+                //left Click
+                break;
+            case 2:
+                //middle Click
 
-        //prevent page fom scrolling
-        return false;
+                break;
+            case 3:
+                //right Click
+                break;
+        }
+        return true;// to allow the browser to know that we handled it.
     });
-
-    //IE, Opera, Safari
-    $('#elem').bind('mousewheel', function(e){
-        if(e.originalEvent.wheelDelta < 0) {
-            //scroll down
-            console.log('Down');
-        }else {
-            //scroll up
-            console.log('Up');
-        }
-
-        //prevent page fom scrolling
-        return false;
-    });*/
 
 });

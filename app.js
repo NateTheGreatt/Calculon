@@ -80,18 +80,46 @@ app.post('/test', function(req,res) {
 
 app.post('/save', function(req,res) {
 
-    var boops = req.body.collection;
+    var boops = JSON.parse(req.body.boops),
+        projectData = JSON.parse(req.body.projectData);
 
-    console.log(boops);
+//    console.log(boops);
 
     boops.filter(function(_boop) {
-        var boop = new BoopModel();
-        boop.id = _boop.id;
-        boop.type = _boop.type;
-        boop.value = _boop.value;
-        boop.x = _boop.x;
-        boop.y = _boop.y;
-        boop.save();
+        BoopModel.findOne({"id": _boop.id, "projectId": projectData.id}, function(err, boop) {
+            if(boop) {
+                BoopModel.update(
+                    // WHERE
+                    {"id": _boop.id, "projectId": projectData.id},
+                    // what to update
+                    {
+                        "type": _boop.type,
+                        "value": _boop.value,
+                        "x": _boop.position.x,
+                        "y": _boop.position.y
+                    },
+                    // callback
+                    function(err,boop) {
+                        if(err) res.send(500, err);
+                        else {
+                            console.log('boop found and updated');
+                        }
+                    }
+                );
+            } else {
+                var boop = new BoopModel();
+                boop.id = _boop.id;
+                boop.projectId = projectData.id;
+                boop.type = _boop.type;
+                boop.value = _boop.value;
+                boop.x = _boop.position.x;
+                boop.y = _boop.position.y;
+                boop.save();
+                console.log('new boop saved');
+            }
+        })
+
+
     });
 
     /*var closure = new ClosureModel();
