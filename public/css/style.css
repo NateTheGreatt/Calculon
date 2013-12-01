@@ -18,11 +18,10 @@ a {
     width:1000px
 }
 
-.app-header {
+.toolbar {
     background-color:#3C3F41;
 	left: 29%;
 	top: .5%;
-    height:50px;
     -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 1);
     -moz-box-shadow:    0px 3px 7px rgba(0, 0, 0, 1);
     box-shadow:         0px 3px 7px rgba(0, 0, 0, 1);
@@ -30,24 +29,26 @@ a {
     z-index: 5;
     border-bottom: 1px solid #000;
     position:fixed;
+    padding:10px;
+}
+
+.toolbar button {
+    margin: 5px;
 }
 
 .login {
     background-color:#3C3F41;
-	left: 1%;
+	right: 1%;
 	top: .8%;
-    height:50px;
     -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 1);
     -moz-box-shadow:    0px 3px 7px rgba(0, 0, 0, 1);
     box-shadow:         0px 3px 7px rgba(0, 0, 0, 1);
-    text-align: center;
+    text-align: left;
     z-index: 5;
     border-bottom: 1px solid #000;
     position:fixed;
-}
-
-.app-header button {
-    margin: 5px;
+    color:#fff;
+    padding: 10px;
 }
 
 .calculon {
