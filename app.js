@@ -128,12 +128,12 @@ app.post('/save', function(req,res) {
                 boop.save();
                 console.log('new boop saved');
 
-                _boop.inputs.filter(port) {
+                _boop.inputs.filter(function (port) {
                     var closure = new ClosureModel();
                     closure.projectId = 1; // @TODO: change dis
                     closure.boopId = _boop.id;
                     closure.ancestor = port.boopId;
-                }
+                });
             }
         })
 
