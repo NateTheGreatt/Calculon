@@ -49,8 +49,17 @@ var db = mongoose.connect('mongodb://localhost/calculon');
 var ProjectSchema = new mongoose.Schema({
     id: Number,
     name: String,
+    closureTable: [ClosureSchema],
+    boops: [BoopSchema],
     user: String
 });
+
+ProjectModel = new mongoose.model('project', ProjectSchema);
+
+var project = new ProjectModel();
+project.id = 1;
+project.name = 'Main Project';
+project.save();
 
 var BoopSchema = new mongoose.Schema({
     id: Number,
@@ -58,7 +67,9 @@ var BoopSchema = new mongoose.Schema({
     type: String,
     value: Number,
     x: Number,
-    y: Number
+    y: Number,
+    inputs: [],
+    outputs: []
 });
 
 var BoopModel = mongoose.model('boop', BoopSchema);
@@ -116,6 +127,13 @@ app.post('/save', function(req,res) {
                 boop.y = _boop.position.y;
                 boop.save();
                 console.log('new boop saved');
+
+                _boop.inputs.filter(port) {
+                    var closure = new ClosureModel();
+                    closure.projectId = 1; // @TODO: change dis
+                    closure.boopId = _boop.id;
+                    closure.ancestor = port.boopId;
+                }
             }
         })
 
