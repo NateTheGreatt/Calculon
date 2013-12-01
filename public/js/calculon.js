@@ -279,7 +279,7 @@ jsPlumb.ready(function() {
     });
 
     $(document).on("click", ".addBoop", function(event){
-        addBoop($(this).html());
+        addBoop($(this).attr('name'));
     });
 
     $('.calculon').mousedown(function(e){
