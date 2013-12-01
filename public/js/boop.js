@@ -307,7 +307,7 @@ function AdditionBoop()
 {
     Boop.call(this);	// call parent constructor
     this.setType('addition');
-    this.setMaxInputs(10); // upper limit theoretically infinite, so lets limit it at 10
+//    this.setMaxInputs(10); // upper limit theoretically infinite, so lets limit it at 10
     console.log('Addition Boop Created');
 }
 
@@ -366,7 +366,7 @@ function MultiplicationBoop()
 {
     Boop.call(this);	// call parent constructor
     this.setType('multiplication');
-    this.setMaxInputs(10); // upper limit theoretically infinite, so lets limit it at 10
+//    this.setMaxInputs(10); // upper limit theoretically infinite, so lets limit it at 10
     console.log('Multiplication Boop Created');
 }
 
