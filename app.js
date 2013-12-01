@@ -54,7 +54,7 @@ var ProjectSchema = new mongoose.Schema({
     user: String
 });
 
-ProjectModel = new mongoose.model('project', ProjectSchema);
+var ProjectModel = mongoose.model('project', ProjectSchema);
 
 var project = new ProjectModel();
 project.id = 1;
