@@ -115,7 +115,7 @@ jsPlumb.ready(function() {
 
         var $boopWrapper = $('<div>').addClass('boopWrapper'),
             $boop = $('<div>').attr('id', 'boop-'+id).addClass('boop'),
-            $title = $('<div>').addClass('title').text('Boop '+id),
+            $title = $('<div>').addClass('title'),
             $type = $('<div>').text(type),
             $value = $('<input type="text">').addClass('value disabled').val('0');
 

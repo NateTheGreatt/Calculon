@@ -1,6 +1,7 @@
 extends layout
 
 block content
+
     .app-header
         //button.addBoop.btn.btn-default.btn-sm(type='button') Variable
             button.addBoop.btn.btn-default.btn-sm(type='button') Addition
@@ -18,6 +19,11 @@ block content
         button.addBoop.btn.pure-button-default(type='button', name='Exponent') Exponent
         button.addBoop.btn.pure-button-default(type='button', name='Square Root') Square Root
         button.addBoop.btn.pure-button-default(type='button', name='Modulo') Modulo
+        button.addBoop.btn.pure-button-trash(type='button', name='Trash') Trash
+        button.addBoop.btn.pure-button-boopit(type='button', name='BoopIt') Boop-It
+    .login
+        form{:class=>'pure-form pure-form-stacked}
+           label{:for=>'email} Email
     #calculon.calculon
 
     script(src='js/boop.js')
