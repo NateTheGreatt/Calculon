@@ -157,6 +157,11 @@ app.post('/save', function(req,res) {
     res.end(JSON.stringify(boops));
 });
 
+app.post('/load', function(req,res) {
+
+    res.end(JSON.stringify(data));
+})
+
 app.post('/saveBoop', function(req,res) {
     console.log('hey could u save boop pls');
     BoopModel.findOne({id: req.body.id}, function(err,boop) {

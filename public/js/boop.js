@@ -16,6 +16,7 @@ function extend(base, sub)
 }
 
 var boops = [];
+var closureTable = [];
 var projectId = 0; // the scope of the workspace
 
 // Fields
@@ -23,14 +24,71 @@ var id = -1; // start at -1 so the first boop ID is 0
 var toSave = [];
 var timeoutID;
 
-// jQuery Objects
-/*var $port = $(document.createElement('div'))
-    .addClass('port');
+function newBoop() {
 
-var $boop = $(document.createElement('div'))
-    .addClass('boop')
-    .append(document.createElement('div'))
-    .html('Boop #'+this.id);*/
+}
+
+function createBoops(data) {
+
+    data.filter(function(_boop) {
+        var boop = {};
+        switch(_boop.type) {
+            case 'Boop':
+                boop = new Boop();
+                break;
+            case 'Variable':
+                boop = new VariableBoop();
+                break;
+            case 'Addition':
+                boop = new AdditionBoop();
+                break;
+            case 'Subtraction':
+                boop = new SubtractionBoop();
+                break;
+            case 'Multiplication':
+                boop = new MultiplicationBoop();
+                break;
+            case 'Division':
+                boop = new DivisionBoop();
+                break;
+            case 'Exponent':
+                boop = new ExponentBoop();
+                break;
+            case 'Square Root':
+                boop = new SquareRootBoop();
+                break;
+            case 'Modulo':
+                boop = new ModuloBoop();
+                break;
+        }
+        
+        boop.setValue(_boop.value);
+        boop.setId(_boop.id);
+        _boop.inputs.filter(function(input) {
+            boop.inputs.push(new Port(input));
+        });
+        _boop.outputs.filter(function(output) {
+            boop.outputs.push(new Port(output));
+        });
+        boop.position().x = _boop.x;
+        boop.position().y = _boop.y;
+    })
+
+    console.log( "Data Loaded: " + data );
+}
+
+function loadProject(id) {
+    $.ajax({
+        type: "POST",
+        url: "/load",
+        data: {"projectId":id},
+        dataType: 'json'
+    }).done(createBoops);
+}
+
+$(function() {
+    loadProject(1);
+})
 
 //<<-------------------------- Abastract Base Boop ----------------------------------->>
 
@@ -57,7 +115,7 @@ function updateDatabase()
      data: {"boops":JSON.stringify(toSave), "projectData": JSON.stringify(projectData)},
      dataType: 'json'
      }).done(function( data ) {
-        console.log( "Data Saved: " + data );
+        console.log( "Data Saved: " + JSON.stringify(data) );
      });
 }
 
@@ -80,22 +138,20 @@ function updateCollector(boop)
 }
 
 function getBoopById(id) {
-    boops.filter(function(boop) {
-        if(boop.id == id) return boop;
-    })
+    return _.where(boops, {id: id});
 }
 
-function Port(boop)
+function Port(id)
 {
-    this.boopId = boop.getId();
+    this.id = id;
     this.getId = function() {
-        return boops[this.boopId].getId();
+        return getBoopById(this.id).getId();
     }
     this.getValue = function() {
-        return boops[this.boopId].getValue();
+        return getBoopById(this.id).getValue();
     }
     this.update = function() {
-        boops[this.boopId].update();
+        getBoopById(this.id).update();
     }
 }
 
@@ -104,6 +160,8 @@ function Boop()
     this.children = [];
     this.inputs = [];
     this.outputs = [];
+    this.childInputs = [];
+    this.childOutputs = [];
     // max or required number of inputs & outputs
     this.maxInputs = 2; // two inputs by default
     this.maxOutputs = 1; // one output by default
@@ -136,13 +194,12 @@ Boop.prototype =
     evaluate : function()
     {
         // parse children
-        /*this.childInputs = [];
+        this.childInputs = [];
         this.children.filter(function(o)
         {
             switch(o.getType())
             {
                 case "input":
-                    o.update();
                     this.childInputs.push(o);
                     break;
                 case "output":
@@ -166,7 +223,7 @@ Boop.prototype =
         else
         {
             return 0;
-        }*/
+        }
     },
 
     getValue : function()
@@ -246,10 +303,10 @@ Boop.prototype =
 
     connectTo : function(other)
     {
-        other.inputs.push(new Port(this)); // add a Port that references this boop to other boop's input array
+        other.inputs.push(new Port(this.getId())); // add a Port that references this boop to other boop's input array
         other.update();				        // update them
 
-        this.outputs.push(new Port(other)); // add a Port that references the other boop in this boop's output array
+        this.outputs.push(new Port(other.getId())); // add a Port that references the other boop in this boop's output array
 
         console.log('Boop' + this.getId() + ' connected to Boop' + other.getId());
     },

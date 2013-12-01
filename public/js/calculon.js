@@ -162,7 +162,7 @@ jsPlumb.ready(function() {
 
         $('.value').change(function() {
             var id = $(this).parent().attr('id').split('-')[1];
-            boops[id].setValue($(this).val());
+            getBoopById(id).setValue($(this).val());
             // redraw UI
 //            $(this).addClass('.toRedraw');
 //            $('.toRedraw').trigger('redraw');
@@ -173,7 +173,7 @@ jsPlumb.ready(function() {
         $('.value').on('redraw', function() {
             var id = $(this).parent().attr('id').split('-')[1];
 
-            $(this).val(boops[id].getValue());
+            $(this).val(getBoopById(id).getValue());
 
             $(this).removeClass('.toRedraw');
             console.log('redrawing');
@@ -191,7 +191,7 @@ jsPlumb.ready(function() {
 
         $('.boop').mouseup(function(e) {
             var id = $(this).attr('id').split('-')[1];
-            boops[id].setPos($(this).position().left, $(this).position().top);
+            getBoopById(id).setPos($(this).position().left, $(this).position().top);
         });
 
         $('.boop').bind('mousewheel', function(e) {
@@ -226,8 +226,8 @@ jsPlumb.ready(function() {
             var sourceId = info.sourceId.split('-')[1],
                 targetId = info.targetId.split('-')[1];
 
-            boops[sourceId].connectTo(boops[targetId]);
-            $('#boop-'+targetId+' .value').val(boops[targetId].getValue());
+            getBoopById(sourceId).connectTo(getBoopById(targetId));
+            $('#boop-'+targetId+' .value').val(getBoopById(targetId).getValue());
             $('.value').trigger('redraw');
         });
 
@@ -236,8 +236,8 @@ jsPlumb.ready(function() {
             var sourceId = info.sourceId.split('-')[1],
                 targetId = info.targetId.split('-')[1];
 
-            boops[sourceId].disconnectFrom(boops[targetId]);
-            $('#boop-'+targetId+' .value').val(boops[targetId].getValue());
+            getBoopById(sourceId).disconnectFrom(getBoopById(targetId));
+            $('#boop-'+targetId+' .value').val(getBoopById(targetId).getValue());
             $('.value').trigger('redraw');
 
         });
