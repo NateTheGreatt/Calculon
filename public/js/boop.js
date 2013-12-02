@@ -4,6 +4,16 @@ function extend(base, sub)
     sub.prototype.constructor = sub;
 }
 
+function Port(id)
+{
+    this.id = id;
+    this.getValue = function() {
+        return BoopFactory.getBoop(this.id).getValue();
+    }
+    this.update = function() {
+        BoopFactory.getBoop(this.id).update();
+    }
+}
 
 var BoopFactory = (function () {
     var boops = [];
@@ -49,17 +59,6 @@ var BoopFactory = (function () {
             }
         }
         toSave.push(boop);          // add boop to array
-    }
-
-    function Port(id)
-    {
-        this.id = id;
-        this.getValue = function() {
-            return boops[this.id].getValue();
-        }
-        this.update = function() {
-            boops[this.id].update();
-        }
     }
 
     function Boop() {

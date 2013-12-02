@@ -203,11 +203,13 @@ var Calculon = (function () {
             newBoop.setValue(data.value);
             newBoop.setPos(data.x, data.y);
             console.log(data.inputs);
-            data.inputs.filter(function (input) {
-                newBoop.inputs.push(new Port(input));
+            data.inputs.filter(function (id) {
+                newBoop.inputs.push(new Port(id));
+//                newBoop.addInput(id);
             });
-            data.outputs.filter(function (output) {
-                newBoop.outputs.push(new Port(output));
+            data.outputs.filter(function (id) {
+                newBoop.outputs.push(new Port(id));
+//                newBoop.addInput(id);
             });
             makeInitialConnections();
             $('.boop').trigger('redraw');

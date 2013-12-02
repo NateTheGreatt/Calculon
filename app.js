@@ -92,7 +92,9 @@ app.post('/save', function(req,res) {
 //    console.log(boops);
 
     boops.filter(function(_boop) {
-        var inputs, outputs;
+        var inputs = [],
+            outputs = [];
+
         _boop.inputs.filter(function(port) {
             inputs.push(port.id);
         });
@@ -130,12 +132,8 @@ app.post('/save', function(req,res) {
                 boop.x = _boop.position.x;
                 boop.y = _boop.position.y;
 
-                _boop.inputs.filter(function(port) {
-                    boop.inputs.push(port.id);
-                });
-                _boop.outputs.filter(function(port) {
-                    boop.outputs.push(port.id);
-                });
+                boop.inputs = inputs;
+                boop.outputs = outputs;
 
                 boop.save();
                 console.log('new boop saved');
@@ -148,7 +146,6 @@ app.post('/save', function(req,res) {
                 });*/
             }
         })
-
 
     });
 
