@@ -23,7 +23,6 @@ app.use(express.methodOverride());
 app.use(express.cookieParser('your secret here'));
 app.use(express.session());
 app.use(app.router);
-//app.use(require('stylus').middleware(__dirname + '/public'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
@@ -31,18 +30,9 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-//app.get('/', routes.index);
-
 app.get('/', function(req,res) {
     res.render('calculon');
-})
-
-app.get('/boop', function(req,res) {
-    res.render('boop');
 });
-app.get('/flowchart', function(req,res) {
-    res.render('flowchart');
-})
 
 var db = mongoose.connect('mongodb://localhost/calculon');
 
@@ -56,15 +46,20 @@ var ProjectSchema = new mongoose.Schema({
 
 var ProjectModel = mongoose.model('project', ProjectSchema);
 
-var project = new ProjectModel();
-project.id = 1;
-project.name = 'Main Project';
-project.save();
+ProjectModel.find({id:1}, function(err,p) {
+    if(p.length==0) {
+        var project = new ProjectModel();
+        project.id = 1;
+        project.name = 'Main Project';
+        project.save();
+    }
+});
 
 var BoopSchema = new mongoose.Schema({
     id: Number,
     projectId: Number,
     type: String,
+    parent: Number, // id of parent boop
     value: Number,
     x: Number,
     y: Number,
@@ -97,6 +92,13 @@ app.post('/save', function(req,res) {
 //    console.log(boops);
 
     boops.filter(function(_boop) {
+        var inputs, outputs;
+        _boop.inputs.filter(function(port) {
+            inputs.push(port.id);
+        });
+        _boop.outputs.filter(function(port) {
+            outputs.push(port.id);
+        });
         BoopModel.findOne({"id": _boop.id, "projectId": projectData.id}, function(err, boop) {
             if(boop) {
                 BoopModel.update(
@@ -107,7 +109,9 @@ app.post('/save', function(req,res) {
                         "type": _boop.type,
                         "value": _boop.value,
                         "x": _boop.position.x,
-                        "y": _boop.position.y
+                        "y": _boop.position.y,
+                        "inputs": inputs,
+                        "outputs": outputs
                     },
                     // callback
                     function(err,boop) {
@@ -125,15 +129,23 @@ app.post('/save', function(req,res) {
                 boop.value = _boop.value;
                 boop.x = _boop.position.x;
                 boop.y = _boop.position.y;
+
+                _boop.inputs.filter(function(port) {
+                    boop.inputs.push(port.id);
+                });
+                _boop.outputs.filter(function(port) {
+                    boop.outputs.push(port.id);
+                });
+
                 boop.save();
                 console.log('new boop saved');
 
-                _boop.inputs.filter(function (port) {
+                /*_boop.outputs.filter(function (port) {
                     var closure = new ClosureModel();
                     closure.projectId = 1; // @TODO: change dis
                     closure.boopId = _boop.id;
-                    closure.ancestor = port.boopId;
-                });
+                    closure.ancestor = port.id;
+                });*/
             }
         })
 
@@ -158,8 +170,12 @@ app.post('/save', function(req,res) {
 });
 
 app.post('/load', function(req,res) {
-
-    res.end(JSON.stringify(data));
+    BoopModel.find({"projectId": req.body.projectId}, function(err, boops) {
+        if(err) res.send(201, err);
+        else {
+            res.end(JSON.stringify(boops));
+        }
+    })
 })
 
 app.post('/saveBoop', function(req,res) {

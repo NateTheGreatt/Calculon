@@ -22,12 +22,16 @@ block content
         button.addBoop.btn.pure-button-trash(type='button', name='Trash') Trash
         button.addBoop.btn.pure-button-boopit(type='button', name='BoopIt') Boop-It
     .login
-        form(class='pure-form pure-form-stacked')
-            label(for='email') Email
-                input(type='email')
-            label(for='email') Password
-                input(type='password')
-            button.btn.pure-button-default(type='submit') Login
+        //form.pure-form.pure-form-stacked
+        .pure-form.pure-form-stacked
+            input#projectId(type='text', name='projectId', placeholder='Project ID')
+            button.btn.pure-button-default#load Load
+            //
+                label(for='email') Email
+                    input(type='email')
+                label(for='email') Password
+                    input(type='password')
+                button.btn.pure-button-default(type='submit') Login
     #calculon.calculon
 
     script(src='js/boop.js')
