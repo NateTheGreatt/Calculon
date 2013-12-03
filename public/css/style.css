@@ -84,12 +84,10 @@ a {
     display:block;
     background-color:#00b7ff;
     color:black;
-    font-family:monospace;
     font-size:15px;
     width:99px;
     height:99px;
 	font-weight: 600;
-	font-variant: small-caps;
     padding:0;
 	box-shadow: 0px 3px 7px rgba(0, 0, 0, 1);
 }
@@ -102,12 +100,19 @@ a {
 .boop .value {
     padding: 0;
     border: 0;
-    font-size: 32px;
+    margin-top:14px;
+    font-size: 28px;
     text-align: center;
-	height: 70px;
+	height: 40px;
     width: 78px;
     font-weight:bold;
-    background-color: rgba(0,0,0,0);
+    color:#fff;
+    /*background-color: rgba(0,0,0,0);*/
+    background-color:#3C3F41;
+    -moz-box-shadow:inset 0px 1px 8px #000000;
+    -webkit-box-shadow:inset 0px 1px 8px #000000;
+    box-shadow:inset 0px 1px 8px #000000;
+    text-shadow:1px 2px 6px #000000;
 }
 
 .boop .value.disabled {
@@ -126,6 +131,7 @@ a {
 .pure-button-default {
 	background: rgb(66, 184, 221);
 	box-shadow: 0px 3px 7px rgba(0, 0, 0, 1);
+    background-color:#00b7ff;
 }
 
 .pure-button-trash {
