@@ -89,7 +89,7 @@ app.post('/save', function(req,res) {
     var boops = JSON.parse(req.body.boops),
         projectData = JSON.parse(req.body.projectData);
 
-//    console.log(boops);
+    console.log(boops);
 
     boops.filter(function(_boop) {
         var inputs = [],

@@ -93,9 +93,9 @@ var Calculon = (function () {
 
         boops.filter(function(boop) {
             boop.outputs.filter(function(port) {
-                Plumb.connect({uuids:["boop-"+boop.getId()+"Bottom", "boop-"+port.getId()+"ContinuousTop"]})
+                Plumb.connect({uuids:["boop-"+boop.getId()+"Bottom", "boop-"+port.id+"ContinuousTop"]})
             })
-        })
+        });
     }
 
     function addBoop(type, data) {
@@ -144,9 +144,10 @@ var Calculon = (function () {
 
             // set up the rumble settings for when it updates
             $this.jrumble({
-                x: 3,
-                y: 2,
-                rotation: 1
+                x: 0,
+                y: 0,
+                rotation: 5,
+                speed:20
             });
             clearTimeout(timeout);
 
@@ -160,7 +161,7 @@ var Calculon = (function () {
                 boop.outputs.filter(function (port) {
                     $('#boop-' + port.id).trigger('redraw');
                 });
-            }, 200);
+            }, 250);
         });
 
         $boop.mouseup(function (e) {
@@ -266,7 +267,7 @@ jsPlumb.ready(function () {
 
             BoopFactory.getBoop(sourceId).connectTo(BoopFactory.getBoop(targetId));
             $('#boop-' + targetId + ' .value').val(BoopFactory.getBoop(targetId).getValue());
-            $('.boop').trigger('redraw');
+            $('#boop-' + targetId).trigger('redraw');
         });
 
         Plumb.bind('connectionDetached', function (info) {
@@ -276,7 +277,7 @@ jsPlumb.ready(function () {
 
             BoopFactory.getBoop(sourceId).disconnectFrom(BoopFactory.getBoop(targetId));
             $('#boop-' + targetId + ' .value').val(BoopFactory.getBoop(targetId).getValue());
-            $('.boop').trigger('redraw');
+            $('#boop-' + targetId).trigger('redraw');
 
         });
     });
