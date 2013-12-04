@@ -2,6 +2,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   /*background: url("../img/gridbg2.png");*/
   background-color:#0b2a49;
+  overflow:hidden;
 }
 
 *:focus {
@@ -21,7 +22,8 @@ a {
 .toolbar {
     background-color:#3C3F41;
 	left: 10px;
-    top: 100px;
+    top: 10px;
+    margin:auto;
     -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 1);
     -moz-box-shadow:    0px 3px 7px rgba(0, 0, 0, 1);
     box-shadow:         0px 3px 7px rgba(0, 0, 0, 1);
@@ -37,16 +39,16 @@ a {
 }
 
 .login {
+    position:fixed;
     background-color:#3C3F41;
-	right: 1%;
-	top: .8%;
+	bottom:10px;
+	right:10px;
     -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 1);
     -moz-box-shadow:    0px 3px 7px rgba(0, 0, 0, 1);
     box-shadow:         0px 3px 7px rgba(0, 0, 0, 1);
     text-align: left;
     z-index: 5;
     border-bottom: 1px solid #000;
-    position:fixed;
     color:#fff;
     padding: 10px;
 }
@@ -96,6 +98,12 @@ a {
     cursor: move;
     font-size: 9px;
 }
+.boop .label {
+    display:block;
+    width:78px;
+    margin:auto;
+    color:black;
+}
 .boop .value {
     padding: 0;
     border: 0;
@@ -128,7 +136,6 @@ a {
 	background: rgb(66, 184, 221);
 	box-shadow: 0px 3px 7px rgba(0, 0, 0, 1);
     background-color:#00b7ff;
-    display:block;
     width:100px;
 }
 

@@ -174,11 +174,14 @@ var Calculon = (function () {
             $boop = $('<div>').attr('id', 'boop-' + id).addClass('boop'),
             $title = $('<div>').addClass('title'),
             $type = $('<div>').text(type),
-            $value = $('<input type="text">').addClass('value disabled').val('0');
+            $value = $('<input type="text">').addClass('value disabled').val('0'),
+            $label = $('<input type="text">').addClass('label');
 
         if(type != 'variable') {
             $value.attr('disabled', 'disabled');
-        }
+        }/* else {
+            $value.css({'background-color':'#fff'});
+        }*/
 
         $value.change(function () {
             var boop = BoopFactory.getBoop(id);
@@ -234,7 +237,7 @@ var Calculon = (function () {
                 boop.outputs.filter(function (port) {
                     $('#boop-' + port.id).trigger('redraw');
                 });
-            }, 150);
+            }, 300);
         });
 
         $boop.mouseup(function (e) {
@@ -261,6 +264,7 @@ var Calculon = (function () {
         $boop.append($title);
         $boop.append($type);
         $boop.append($value);
+        $boop.append($label);
 
         $boopWrapper.append($boop);
 
@@ -318,7 +322,7 @@ var Calculon = (function () {
                     boops.filter(function (boop) {
                         addBoop(boop.type, boop);
                     });
-//                    makeInitialConnections();
+                    makeInitialConnections();
 
                     $('.boop').trigger('redraw');
                     loading = false;

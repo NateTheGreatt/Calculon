@@ -258,9 +258,9 @@ var BoopFactory = (function () {
 // @Override EVALUATE
     AdditionBoop.prototype.evaluate = function () {
         var sum = 0;
-
+        console.log('addition eval started')
         this.inputs.filter(function (o) {
-            console.log('value: ' + o.getValue());
+            console.log('add value: ' + o.getValue());
             sum += parseFloat(o.getValue());
         });
         console.log('sum: ' + sum);
