@@ -7,6 +7,9 @@ function extend(base, sub)
 function Port(id)
 {
     this.id = id;
+    this.getId = function() {
+        return this.id;
+    }
     this.getValue = function() {
         return BoopFactory.getBoop(this.id).getValue();
     }
@@ -38,7 +41,8 @@ var BoopFactory = (function () {
             data: {"boops":JSON.stringify(toSave), "projectData": JSON.stringify(projectData)},
             dataType: 'json'
         }).done(function( data ) {
-                console.log( "Data Saved: " + JSON.stringify(data) );
+                console.log( "Data Saved: ");
+                console.log( data );
             });
     }
 
@@ -122,7 +126,7 @@ var BoopFactory = (function () {
         },
 
         getValue: function () {
-            return parseFloat(this.value);
+            return this.value;
         },
 
         setValue: function (x) {
@@ -230,7 +234,7 @@ var BoopFactory = (function () {
 //@Override EVALUATE
     VariableBoop.prototype.evaluate = function () {
         var input = this.inputs[0];
-        if (input) {
+        if (input != undefined) {
             console.log('variable has input of ' + input.getValue());
             var value = input.getValue();
             return value ? value : this.getValue();
@@ -353,7 +357,6 @@ var BoopFactory = (function () {
     function ExponentBoop() {
         Boop.call(this);	// call parent constructor
         this.setType('exponent');
-        this.setMaxInputs(1);
         console.log('Exponent Boop Created');
     }
 
@@ -460,7 +463,7 @@ var BoopFactory = (function () {
                 case 'exponent':
                     boop = new ExponentBoop();
                     break;
-                case 'square Root':
+                case 'square root':
                     boop = new SquareRootBoop();
                     break;
             }
